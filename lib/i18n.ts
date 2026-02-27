@@ -1,7 +1,7 @@
 // For å legge til et nytt språk: legg til koden her (f.eks. "de"),
 // og oppdater translations under med en ny nøkkel og full oversettelsesblokk.
 // Legg også til språkets visningsnavn i lang-objektet for alle språk.
-export const locales = ["no", "en", "ta", "ar", "so"] as const;
+export const locales = ["no", "en", "ta", "ar", "so", "ur"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "no";
@@ -39,6 +39,7 @@ export const translations = {
       ta: "தமிழ்",
       ar: "العربية",
       so: "Soomaali",
+      ur: "اردو",
     },
   },
   en: {
@@ -75,6 +76,7 @@ export const translations = {
       ta: "தமிழ்",
       ar: "العربية",
       so: "Soomaali",
+      ur: "اردو",
     },
   },
   ta: {
@@ -111,6 +113,7 @@ export const translations = {
       ta: "தமிழ்",
       ar: "அரபு",
       so: "சோமாலி",
+      ur: "உருது",
     },
   },
   ar: {
@@ -147,6 +150,7 @@ export const translations = {
       ta: "التاميلية",
       ar: "العربية",
       so: "الصومالية",
+      ur: "الأردية",
     },
   },
   so: {
@@ -183,6 +187,44 @@ export const translations = {
       ta: "Tamil",
       ar: "Carabi",
       so: "Soomaali",
+      ur: "Urdu",
+    },
+  },
+  ur: {
+    home: {
+      title: "پنتکوست فیسٹیول 2026",
+      menuService: "عبادت",
+      menuFestival: "فیسٹیول",
+    },
+    gudstjeneste: {
+      title: "عبادت - پنتکوست فیسٹیول",
+    },
+    song: {
+      prev: "← پچھلا",
+      next: "اگلا →",
+      backToService: "← عبادت کی فہرست پر واپس",
+    },
+    festivalen: {
+      title: "فیسٹیول",
+      placeholder: "پنتکوست فیسٹیول کے بارے میں معلومات یہاں آئیں گی۔",
+    },
+    topbar: {
+      title: "پنتکوست فیسٹیول 2026",
+      languageLabel: "زبان",
+      themeLabel: "تھیم",
+      holdAwake: "اسکرین روشن رکھیں",
+      turnOffAwake: "روشن بند کریں",
+      dark: "تاریک",
+      light: "روشن",
+      wakeNotSupported: "اس براؤزر میں اسکرین ویک لاک سپورٹ نہیں ہے۔",
+    },
+    lang: {
+      no: "نارویجن",
+      en: "انگریزی",
+      ta: "تامل",
+      ar: "عربی",
+      so: "صومالی",
+      ur: "اردو",
     },
   },
 } as const;
