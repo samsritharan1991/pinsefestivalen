@@ -1,7 +1,7 @@
 // For å legge til et nytt språk: legg til koden her (f.eks. "de"),
 // og oppdater translations under med en ny nøkkel og full oversettelsesblokk.
 // Legg også til språkets visningsnavn i lang-objektet for alle språk.
-export const locales = ["no", "en", "ta", "ar", "so", "ur"] as const;
+export const locales = ["no", "en", "ta", "ar", "so", "ur", "pl"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "no";
@@ -40,6 +40,7 @@ export const translations = {
       ar: "العربية",
       so: "Soomaali",
       ur: "اردو",
+      pl: "Polski",
     },
   },
   en: {
@@ -77,6 +78,7 @@ export const translations = {
       ar: "العربية",
       so: "Soomaali",
       ur: "اردو",
+      pl: "Polski",
     },
   },
   ta: {
@@ -114,6 +116,7 @@ export const translations = {
       ar: "அரபு",
       so: "சோமாலி",
       ur: "உருது",
+      pl: "போலிஷ்",
     },
   },
   ar: {
@@ -151,6 +154,7 @@ export const translations = {
       ar: "العربية",
       so: "الصومالية",
       ur: "الأردية",
+      pl: "البولندية",
     },
   },
   so: {
@@ -188,6 +192,7 @@ export const translations = {
       ar: "Carabi",
       so: "Soomaali",
       ur: "Urdu",
+      pl: "Boolish",
     },
   },
   ur: {
@@ -225,6 +230,45 @@ export const translations = {
       ar: "عربی",
       so: "صومالی",
       ur: "اردو",
+      pl: "پولش",
+    },
+  },
+  pl: {
+    home: {
+      title: "Festival Pięćdziesiątnicy 2026 (Pinsefestivalen)",
+      menuService: "Nabożeństwo",
+      menuFestival: "Festival",
+    },
+    gudstjeneste: {
+      title: "Nabożeństwo - Festival Pięćdziesiątnicy",
+    },
+    song: {
+      prev: "← Poprzedni",
+      next: "Następny →",
+      backToService: "← Powrót do nabożeństwa",
+    },
+    festivalen: {
+      title: "Festival",
+      placeholder: "Informacje o Festiwalu Pięćdziesiątnicy pojawią się tutaj.",
+    },
+    topbar: {
+      title: "Festival Pięćdziesiątnicy 2026",
+      languageLabel: "Język",
+      themeLabel: "Motyw",
+      holdAwake: "Trzymaj ekran włączony",
+      turnOffAwake: "Wyłącz podświetlenie",
+      dark: "Ciemny",
+      light: "Jasny",
+      wakeNotSupported: "Blokada czuwania ekranu nie jest obsługiwana w tej przeglądarce.",
+    },
+    lang: {
+      no: "Norweski",
+      en: "Angielski",
+      ta: "Tamilski",
+      ar: "Arabski",
+      so: "Somalijski",
+      ur: "Urdu",
+      pl: "Polski",
     },
   },
 } as const;
