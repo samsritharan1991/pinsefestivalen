@@ -1,7 +1,7 @@
 // For å legge til et nytt språk: legg til koden her (f.eks. "de"),
 // og oppdater translations under med en ny nøkkel og full oversettelsesblokk.
 // Legg også til språkets visningsnavn i lang-objektet for alle språk.
-export const locales = ["no", "en", "ta"] as const;
+export const locales = ["no", "en", "ta", "ar"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "no";
@@ -37,6 +37,7 @@ export const translations = {
       no: "Norsk",
       en: "English",
       ta: "தமிழ்",
+      ar: "العربية",
     },
   },
   en: {
@@ -71,6 +72,7 @@ export const translations = {
       no: "Norsk",
       en: "English",
       ta: "தமிழ்",
+      ar: "العربية",
     },
   },
   ta: {
@@ -105,6 +107,42 @@ export const translations = {
       no: "நார்வீஜியன்",
       en: "ஆங்கிலம்",
       ta: "தமிழ்",
+      ar: "அரபு",
+    },
+  },
+  ar: {
+    home: {
+      title: "مهرجان العنصرة 2026",
+      menuService: "الخدمة",
+      menuFestival: "المهرجان",
+    },
+    gudstjeneste: {
+      title: "الخدمة - مهرجان العنصرة",
+    },
+    song: {
+      prev: "← السابق",
+      next: "التالي →",
+      backToService: "← العودة إلى نظرة الخدمة",
+    },
+    festivalen: {
+      title: "المهرجان",
+      placeholder: "معلومات عن مهرجان العنصرة ستظهر هنا.",
+    },
+    topbar: {
+      title: "مهرجان العنصرة 2026",
+      languageLabel: "اللغة",
+      themeLabel: "المظهر",
+      holdAwake: "إبقاء الشاشة مفتوحة",
+      turnOffAwake: "إيقاف إبقاء الشاشة",
+      dark: "داكن",
+      light: "فاتح",
+      wakeNotSupported: "قفل إبقاء الشاشة غير مدعوم في هذا المتصفح.",
+    },
+    lang: {
+      no: "النرويجية",
+      en: "الإنجليزية",
+      ta: "التاميلية",
+      ar: "العربية",
     },
   },
 } as const;
