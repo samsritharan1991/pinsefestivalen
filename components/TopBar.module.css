@@ -56,35 +56,34 @@
   align-items: center;
 }
 
-.langToggle {
+.langWrap {
   display: flex;
+  align-items: center;
+}
+
+.langSelect {
+  font-size: 14px;
+  padding: 8px 32px 8px 12px;
   border: 1px solid var(--border);
   border-radius: 10px;
-  overflow: hidden;
   background: var(--card);
-}
-
-.langOption,
-.langActive {
-  font-size: 14px;
-  padding: 8px 12px;
-  text-decoration: none;
   color: var(--fg);
-  transition: background 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
-.langOption {
-  background: transparent;
+.langSelect:hover {
+  border-color: color-mix(in srgb, var(--fg) 30%, var(--border));
 }
 
-.langOption:hover {
-  background: color-mix(in srgb, var(--fg) 8%, transparent);
-}
-
-.langActive {
-  background: color-mix(in srgb, var(--fg) 15%, var(--card));
-  font-weight: 600;
-  cursor: default;
+.langSelect:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand) 25%, transparent);
 }
 
 /* iPhone-style segmentert tema-toggle */

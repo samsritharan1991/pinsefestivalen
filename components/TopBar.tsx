@@ -82,22 +82,27 @@ export default function TopBar() {
           <span className={styles.titleText}>{t.topbar.title}</span>
         </Link>
         <div className={styles.actions}>
-          <div className={styles.langToggle} role="group" aria-label={t.topbar.languageLabel}>
-            {locales.map((loc) => {
-              const url = pathname ? `${pathname}?lang=${loc}` : `/?lang=${loc}`;
-              const label = t.lang[loc as keyof typeof t.lang];
-              return (
-                <Link
-                  key={loc}
-                  href={url}
-                  className={locale === loc ? styles.langActive : styles.langOption}
-                  aria-label={label}
-                  aria-current={locale === loc ? "true" : undefined}
-                >
-                  {loc.toUpperCase()}
-                </Link>
-              );
-            })}
+          <div className={styles.langWrap} role="group" aria-label={t.topbar.languageLabel}>
+            <select
+              value={locale}
+              onChange={(e) => {
+                const next = e.target.value as Locale;
+                if (locales.includes(next)) {
+                  setLocale(next);
+                  const url = pathname ? `${pathname}?lang=${next}` : `/?lang=${next}`;
+                  router.push(url);
+                }
+              }}
+              className={styles.langSelect}
+              aria-label={t.topbar.languageLabel}
+              title={t.topbar.languageLabel}
+            >
+              {locales.map((loc) => (
+                <option key={loc} value={loc}>
+                  {t.lang[loc as keyof typeof t.lang]}
+                </option>
+              ))}
+            </select>
           </div>
           <div
             className={styles.themeToggle}
