@@ -1,7 +1,7 @@
 // For å legge til et nytt språk: legg til koden her (f.eks. "de"),
 // og oppdater translations under med en ny nøkkel og full oversettelsesblokk.
 // Legg også til språkets visningsnavn i lang-objektet for alle språk.
-export const locales = ["no", "en", "ta", "ar"] as const;
+export const locales = ["no", "en", "ta", "ar", "so"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "no";
@@ -38,6 +38,7 @@ export const translations = {
       en: "English",
       ta: "தமிழ்",
       ar: "العربية",
+      so: "Soomaali",
     },
   },
   en: {
@@ -73,6 +74,7 @@ export const translations = {
       en: "English",
       ta: "தமிழ்",
       ar: "العربية",
+      so: "Soomaali",
     },
   },
   ta: {
@@ -108,6 +110,7 @@ export const translations = {
       en: "ஆங்கிலம்",
       ta: "தமிழ்",
       ar: "அரபு",
+      so: "சோமாலி",
     },
   },
   ar: {
@@ -143,6 +146,43 @@ export const translations = {
       en: "الإنجليزية",
       ta: "التاميلية",
       ar: "العربية",
+      so: "الصومالية",
+    },
+  },
+  so: {
+    home: {
+      title: "Xafladda Pentikost 2026",
+      menuService: "Isha",
+      menuFestival: "Xafladda",
+    },
+    gudstjeneste: {
+      title: "Isha - Xafladda Pentikost",
+    },
+    song: {
+      prev: "← Ka hor",
+      next: "Xiga →",
+      backToService: "← Ku noqo isha",
+    },
+    festivalen: {
+      title: "Xafladda",
+      placeholder: "Macluumaadka Xafladda Pentikost waxaa halkan ku soo baxaya.",
+    },
+    topbar: {
+      title: "Xafladda Pentikost 2026",
+      languageLabel: "Luqadda",
+      themeLabel: "Muuqaalka",
+      holdAwake: "Si screenka u socdo",
+      turnOffAwake: "Ka bood socodka screenka",
+      dark: "Madoow",
+      light: "Iftiinka",
+      wakeNotSupported: "Screen wake lock ma taageero browserkan.",
+    },
+    lang: {
+      no: "Noorweji",
+      en: "Ingiriisi",
+      ta: "Tamil",
+      ar: "Carabi",
+      so: "Soomaali",
     },
   },
 } as const;
