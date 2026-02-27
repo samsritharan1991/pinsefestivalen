@@ -1,0 +1,135 @@
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--brand);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: var(--brand);
+  filter: brightness(1.1);
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.titleText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.langToggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--card);
+}
+
+.langOption,
+.langActive {
+  font-size: 14px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--fg);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.langOption {
+  background: transparent;
+}
+
+.langOption:hover {
+  background: color-mix(in srgb, var(--fg) 8%, transparent);
+}
+
+.langActive {
+  background: color-mix(in srgb, var(--fg) 15%, var(--card));
+  font-weight: 600;
+  cursor: default;
+}
+
+/* iPhone-style segmentert tema-toggle */
+.themeToggle {
+  display: flex;
+  align-items: stretch;
+  padding: 4px;
+  gap: 0;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.themeSegment,
+.themeSegmentActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  background: transparent;
+  color: var(--muted);
+}
+
+.themeSegment:hover {
+  color: var(--fg);
+  background: color-mix(in srgb, var(--fg) 6%, transparent);
+}
+
+.themeSegmentActive {
+  background: var(--brand);
+  color: #fff;
+  cursor: default;
+}
+
+.themeSegmentActive:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.themeSegment:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,65 @@
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #666666;
+  --card: #f6f6f6;
+  --border: #e6e6e6;
+  --link: #0b57d0;
+  --brand: #e85d04;
+
+  --fontSize: 20px; /* mobil-first */
+  --lineHeight: 1.7;
+}
+
+[data-theme="dark"] {
+  --bg: #0b0c10;
+  --fg: #f2f2f2;
+  --muted: #a7a7a7;
+  --card: #151824;
+  --border: #23273a;
+  --link: #8ab4ff;
+  --brand: #f97316;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 76px 16px 40px; /* plass til sticky toppbar */
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 0.6em 0 0.3em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.2em 0;
+}
+
+.lyrics p {
+  margin: 0.75em 0;
+}
+
+.lyrics strong {
+  font-weight: 700;
+}
