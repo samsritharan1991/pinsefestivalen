@@ -93,7 +93,7 @@ export const translations = {
     song: {
       prev: "← முந்தைய",
       next: "அடுத்து →",
-      backToService: "← சேவை மீண்டும்",
+      backToService: "← திரும்பச் செல்",
     },
     festivalen: {
       title: "திருவிழா",
