@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ServiceItem, type Song } from "@/lib/content";
 import SongHeading from "@/components/SongHeading";
 import SongMetadata from "@/components/SongMetadata";
+import { getTranslations } from "@/lib/i18n";
+import { useLocale } from "@/components/LocaleProvider";
 
 type Props = {
   item: ServiceItem;
@@ -26,6 +28,9 @@ function linkStyle(enabled: boolean) {
 }
 
 export default function ServiceItemContent({ item, prev, next, song }: Props) {
+  const { locale } = useLocale();
+  const t = getTranslations(locale);
+
   const getItemTitle = (item: ServiceItem): string => {
     if (item.type === "song") return song?.title ?? item.title ?? item.slug;
     if (item.type === "heading") return item.title;
@@ -68,7 +73,7 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
     <div>
       <div style={{ marginBottom: "1em" }}>
         <Link href="/gudstjeneste" style={{ color: "#d97e3a", textDecoration: "none", fontWeight: "500" }}>
-          ← Tilbake til program
+          {t.song.backToService}
         </Link>
       </div>
       <h1>{getItemTitle(item)}</h1>
@@ -86,10 +91,10 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
 
       <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", gap: "1em", justifyContent: "space-between", padding: "1em 2em", background: "white", borderTop: "1px solid #e0e0e0" }}>
         <Link href={prev ? `/programpunkt/${prev}` : "#"} style={linkStyle(!!prev)} aria-disabled={!prev}>
-          ← Forrige
+          {t.song.prev}
         </Link>
         <Link href={next ? `/programpunkt/${next}` : "#"} style={linkStyle(!!next)} aria-disabled={!next}>
-          Neste →
+          {t.song.next}
         </Link>
       </div>
     </div>
