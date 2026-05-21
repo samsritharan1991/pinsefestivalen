@@ -2,9 +2,8 @@
 title: "Apostlenes Gjerninger 2,1-11"
 ---
 
-# Apostlenes Gjerninger 2,1-11
+## Lesere
 
-**Lesere:**
 - Irene - Vers 1 på norsk
 - Daniel - Vers 2 på Nepali
 - Yohannes - Vers 3 på amharisk
@@ -17,4 +16,6 @@ title: "Apostlenes Gjerninger 2,1-11"
 - Mengstab Hagos - Vers 10 på tigrinja
 - Sunil - Vers 11 på telugu
 
-## Tekst kommer her
+## Tekst
+
+Tekst kommer her

@@ -56,10 +56,33 @@ hr {
   margin: 1.2em 0;
 }
 
-.lyrics p {
-  margin: 0.75em 0;
+.lyrics h2 {
+  font-size: 0.85em;
+  font-weight: 700;
+  margin: 1.4em 0 0.5em;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.lyrics strong {
-  font-weight: 700;
+.lyrics h2:first-child {
+  margin-top: 0;
+}
+
+.lyrics p {
+  margin: 0.2em 0;
+}
+
+.lyrics ul {
+  margin: 0.5em 0 1em;
+  padding-left: 1.25em;
+}
+
+.lyrics li {
+  margin: 0.35em 0;
+}
+
+.lyrics em {
+  color: var(--muted);
+  font-style: italic;
 }

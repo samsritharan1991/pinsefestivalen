@@ -35,7 +35,12 @@ export default function ServiceItemContent({ item, prev, next, songContent }: Pr
   const getItemContent = (item: ServiceItem): React.ReactNode => {
     if (item.type === "song") {
       if (songContent) {
-        return <div dangerouslySetInnerHTML={{ __html: songContent }} />;
+        return (
+          <article
+            className="lyrics"
+            dangerouslySetInnerHTML={{ __html: songContent }}
+          />
+        );
       }
       return <p style={{ color: "var(--muted)" }}>Sangen er lastet fra {item.slug}</p>;
     }
