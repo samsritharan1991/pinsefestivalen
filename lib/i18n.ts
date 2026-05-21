@@ -21,6 +21,9 @@ export const translations = {
       next: "Neste →",
       backToService: "← Til gudstjeneste oversikten",
     },
+    kollekt: {
+      payWithVipps: "Betal med Vipps",
+    },
     festivalen: {
       title: "Festivalen",
       placeholder: "Informasjon om Pinsefestivalen kommer her.",
@@ -56,6 +59,9 @@ export const translations = {
       prev: "← Previous",
       next: "Next →",
       backToService: "← Back to service overview",
+    },
+    kollekt: {
+      payWithVipps: "Pay with Vipps",
     },
     festivalen: {
       title: "The Festival",
@@ -95,6 +101,9 @@ export const translations = {
       next: "அடுத்து →",
       backToService: "← திரும்பச் செல்",
     },
+    kollekt: {
+      payWithVipps: "Vipps மூலம் பணம் செலுத்தவும்",
+    },
     festivalen: {
       title: "திருவிழா",
       placeholder: "பெந்தெகொஸ்த் திருவிழா பற்றிய தகவல் இங்கு வரும்.",
@@ -132,6 +141,9 @@ export const translations = {
       prev: "← السابق",
       next: "التالي →",
       backToService: "← العودة إلى نظرة الخدمة",
+    },
+    kollekt: {
+      payWithVipps: "الدفع عبر Vipps",
     },
     festivalen: {
       title: "المهرجان",
@@ -171,6 +183,9 @@ export const translations = {
       next: "Xiga →",
       backToService: "← Ku noqo isha",
     },
+    kollekt: {
+      payWithVipps: "Bixinta Vipps",
+    },
     festivalen: {
       title: "Xafladda",
       placeholder: "Macluumaadka Xafladda Pentikost waxaa halkan ku soo baxaya.",
@@ -209,6 +224,9 @@ export const translations = {
       next: "اگلا →",
       backToService: "← عبادت کی فہرست پر واپس",
     },
+    kollekt: {
+      payWithVipps: "Vipps کے ساتھ ادائیگی",
+    },
     festivalen: {
       title: "فیسٹیول",
       placeholder: "پنتکوست فیسٹیول کے بارے میں معلومات یہاں آئیں گی۔",
@@ -246,6 +264,9 @@ export const translations = {
       prev: "← Poprzedni",
       next: "Następny →",
       backToService: "← Powrót do nabożeństwa",
+    },
+    kollekt: {
+      payWithVipps: "Zapłać za pomocą Vipps",
     },
     festivalen: {
       title: "Festival",

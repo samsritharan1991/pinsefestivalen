@@ -55,7 +55,28 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
       return <p style={{ color: "var(--muted)" }}>Overskrift</p>;
     }
     if (item.type === "text") {
-      return <p>{item.content}</p>;
+      return (
+        <>
+          <p>{item.content}</p>
+          {item.vippsNumber && (
+            <a
+              href={`vipps://${item.vippsNumber}`}
+              style={{
+                display: "inline-block",
+                marginTop: "1.5em",
+                padding: "0.75em 1.5em",
+                backgroundColor: "#d97e3a",
+                color: "white",
+                textDecoration: "none",
+                borderRadius: "0.25em",
+                fontWeight: "500",
+              }}
+            >
+              {t.kollekt.payWithVipps}
+            </a>
+          )}
+        </>
+      );
     }
     if (item.type === "list") {
       return (
