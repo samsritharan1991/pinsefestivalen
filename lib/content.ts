@@ -10,11 +10,46 @@ const SERVICES_DIR = path.join(process.cwd(), "content", "services");
 export type Song = {
   slug: string;
   title: string;
+  titleTranslation?: string;
   html: string;
+  author?: string;
+  singers?: string;
 };
 
+function parseSongTitle(
+  raw: string,
+  data: Record<string, unknown>
+): { title: string; titleTranslation?: string } {
+  const explicit = data.titleTranslation ?? data.title_no;
+  if (explicit) {
+    const parenMatch = raw.match(/^(.+?)\s+\([^)]+\)\s*$/);
+    return {
+      title: parenMatch ? parenMatch[1].trim() : raw,
+      titleTranslation: String(explicit),
+    };
+  }
+
+  const slashMatch = raw.match(/^(.+?)\s+\/\s+(.+?)(?:\s+\((\d+)\))?\s*$/);
+  if (slashMatch) {
+    return {
+      title: slashMatch[1].trim(),
+      titleTranslation: slashMatch[2].trim(),
+    };
+  }
+
+  const parenMatch = raw.match(/^(.+?)\s+\(([^)]+)\)\s*$/);
+  if (parenMatch && !/^\d+$/.test(parenMatch[2].trim())) {
+    return {
+      title: parenMatch[1].trim(),
+      titleTranslation: parenMatch[2].trim(),
+    };
+  }
+
+  return { title: raw };
+}
+
 export type ServiceItem =
-  | { type: "song"; slug: string; title?: string }
+  | { type: "song"; slug: string; title?: string; titleTranslation?: string; singers?: string }
   | { type: "heading"; slug: string; title: string }
   | { type: "text"; slug: string; content: string }
   | { type: "list"; slug: string; items: string[] };
@@ -40,10 +75,16 @@ export async function getSongBySlug(slug: string): Promise<Song> {
   const processed = await remark().use(html).process(content);
   const htmlContent = processed.toString();
 
+  const rawTitle = String(data.title ?? slug);
+  const { title, titleTranslation } = parseSongTitle(rawTitle, data);
+
   return {
     slug,
-    title: String(data.title ?? slug),
+    title,
+    titleTranslation,
     html: htmlContent,
+    author: data.author ? String(data.author) : undefined,
+    singers: data.singers ? String(data.singers) : undefined,
   };
 }
 

@@ -13,10 +13,9 @@ export default async function ProgrampunktPage({
   const { slug } = await params;
   const item = await getServiceItemBySlug(slug, "today");
 
-  let songContent: string | null = null;
+  let song = null;
   if (item.type === "song") {
-    const song = await getSongBySlug(item.slug);
-    songContent = song.html;
+    song = await getSongBySlug(item.slug);
   }
 
   const service = getService("today");
@@ -26,5 +25,5 @@ export default async function ProgrampunktPage({
   const prev = idx > 0 ? itemSlugsInOrder[idx - 1] : null;
   const next = idx >= 0 && idx < itemSlugsInOrder.length - 1 ? itemSlugsInOrder[idx + 1] : null;
 
-  return <ServiceItemContent item={item} prev={prev} next={next} songContent={songContent} />;
+  return <ServiceItemContent item={item} prev={prev} next={next} song={song} />;
 }

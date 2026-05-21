@@ -34,8 +34,6 @@ Han satte seg på steinen, han var hvit som snø
 
 Han sa «Frykt ikke, for Jesus e'kke dø»
 
-## Refr
-
 ## Vers 2
 
 Vaktene skalv av redsel og ble liggende som døde
@@ -53,8 +51,6 @@ Han er ikke der. For Han har stått opp nå
 Ja, si det til disiplene. Og be dem gå
 
 til Galilea, for Jesus er på vei dit nå»
-
-## Refr
 
 ## Vers 3
 
@@ -105,5 +101,3 @@ Han tok all straffen for alt det gale vi har gjort
 Opp, opp, opp, opp, opp
 
 OPP!
-
-## Refr

@@ -1,8 +1,8 @@
 ---
-title: "Des yemil yeyesus menfes (Jesu Ånd som gir glede)"
+title: "Des yemil yeyesus menfes"
+titleTranslation: "Jesu Ånd som gir glede"
+singers: "YBC Barnekor (Amharisk)"
 ---
-
-*YBC Barnekor (Amharisk)*
 
 ## Tekst
 

@@ -86,3 +86,22 @@ hr {
   color: var(--muted);
   font-style: italic;
 }
+
+.song-title-translation {
+  margin: 0.1em 0 0.75em;
+  color: var(--muted);
+  font-size: 1.05em;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.song-meta {
+  margin: 0 0 1.25em;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.song-meta span {
+  display: block;
+}

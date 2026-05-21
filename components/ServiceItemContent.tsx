@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { ServiceItem } from "@/lib/content";
+import { ServiceItem, type Song } from "@/lib/content";
+import SongHeading from "@/components/SongHeading";
+import SongMetadata from "@/components/SongMetadata";
 
 type Props = {
   item: ServiceItem;
   prev: string | null;
   next: string | null;
-  songContent?: string | null;
+  song?: Song | null;
 };
 
 function linkStyle(enabled: boolean) {
@@ -23,9 +25,9 @@ function linkStyle(enabled: boolean) {
   } as const;
 }
 
-export default function ServiceItemContent({ item, prev, next, songContent }: Props) {
+export default function ServiceItemContent({ item, prev, next, song }: Props) {
   const getItemTitle = (item: ServiceItem): string => {
-    if (item.type === "song") return item.title ?? item.slug;
+    if (item.type === "song") return song?.title ?? item.title ?? item.slug;
     if (item.type === "heading") return item.title;
     if (item.type === "text") return item.content;
     if (item.type === "list") return "Liste";
@@ -34,11 +36,11 @@ export default function ServiceItemContent({ item, prev, next, songContent }: Pr
 
   const getItemContent = (item: ServiceItem): React.ReactNode => {
     if (item.type === "song") {
-      if (songContent) {
+      if (song) {
         return (
           <article
             className="lyrics"
-            dangerouslySetInnerHTML={{ __html: songContent }}
+            dangerouslySetInnerHTML={{ __html: song.html }}
           />
         );
       }
@@ -69,8 +71,15 @@ export default function ServiceItemContent({ item, prev, next, songContent }: Pr
           ← Tilbake til program
         </Link>
       </div>
-      <h1>{getItemTitle(item)}</h1>
-      <div style={{ marginTop: "2em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
+      {item.type === "song" && song ? (
+        <>
+          <SongHeading title={song.title} titleTranslation={song.titleTranslation} />
+          <SongMetadata author={song.author} singers={song.singers} />
+        </>
+      ) : (
+        <h1>{getItemTitle(item)}</h1>
+      )}
+      <div style={{ marginTop: "1.5em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
 
       <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", gap: "1em", justifyContent: "space-between", padding: "1em 2em", background: "white", borderTop: "1px solid #e0e0e0" }}>
         <Link href={prev ? `/programpunkt/${prev}` : "#"} style={linkStyle(!!prev)} aria-disabled={!prev}>

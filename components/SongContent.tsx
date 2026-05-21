@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getTranslations } from "@/lib/i18n";
 import { useLocale } from "@/components/LocaleProvider";
 import type { Song } from "@/lib/content";
+import SongHeading from "@/components/SongHeading";
+import SongMetadata from "@/components/SongMetadata";
 
 type Props = {
   song: Song;
@@ -55,7 +57,8 @@ export default function SongContent({ song, prev, next }: Props) {
           {t.song.next}
         </Link>
       </div>
-      <h1>{song.title}</h1>
+      <SongHeading title={song.title} titleTranslation={song.titleTranslation} />
+      <SongMetadata author={song.author} singers={song.singers} />
 
       <article
         className="lyrics"

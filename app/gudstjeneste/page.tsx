@@ -8,7 +8,12 @@ export default async function ServicePage() {
     service.items.map(async (item) => {
       if (item.type === "song") {
         const song = await getSongBySlug(item.slug);
-        return { ...item, title: song.title };
+        return {
+          ...item,
+          title: song.title,
+          titleTranslation: song.titleTranslation,
+          singers: song.singers,
+        };
       }
       return item;
     })

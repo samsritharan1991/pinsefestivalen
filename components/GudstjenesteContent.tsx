@@ -52,6 +52,16 @@ export default function GudstjenesteContent({ service }: Props) {
             <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
               {item.title ?? item.slug.replaceAll("-", " ")}
             </Link>
+            {item.titleTranslation && (
+              <p className="song-title-translation" style={{ margin: "0.15em 0 0" }}>
+                {item.titleTranslation}
+              </p>
+            )}
+            {item.singers && (
+              <p className="song-meta" style={{ margin: "0.1em 0 0" }}>
+                <span>{item.singers}</span>
+              </p>
+            )}
           </div>
         );
       default:
