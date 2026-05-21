@@ -13,10 +13,16 @@ export type Song = {
   html: string;
 };
 
+export type ServiceItem =
+  | { type: "song"; slug: string; title?: string }
+  | { type: "heading"; title: string }
+  | { type: "text"; content: string }
+  | { type: "list"; items: string[] };
+
 export type Service = {
   title: string;
   date?: string;
-  items: Array<{ type: "song"; slug: string; title?: string }>;
+  items: ServiceItem[];
 };
 
 export function getSongSlugs(): string[] {

@@ -1,1 +1,127 @@
-{"title":"Gudstjeneste - Pinsefestivalen","items":[{"type":"song","slug":"amazing-grace"},{"type":"song","slug":"o-store-gud"}]}
+{
+  "title": "Gudstjeneste - Pinsefestivalen",
+  "date": "Gudstjeneste i Grorud, 25.5.2026 - 2. Pinsedag",
+  "items": [
+    {
+      "type": "text",
+      "content": "Blåse orkester"
+    },
+    {
+      "type": "text",
+      "content": "Klokkeringing"
+    },
+    {
+      "type": "text",
+      "content": "Inngangsprosesjon"
+    },
+    {
+      "type": "song",
+      "slug": "holy-holy-holy",
+      "title": "223 Holy, holy, holy / Hellig, hellig, hellig"
+    },
+    {
+      "type": "text",
+      "content": "Nådehilsen og Inngangsord"
+    },
+    {
+      "type": "text",
+      "content": "Samlingsbønn"
+    },
+    {
+      "type": "text",
+      "content": "Bønnerop"
+    },
+    {
+      "type": "text",
+      "content": "GLORIA – Lovsang"
+    },
+    {
+      "type": "song",
+      "slug": "des-yemil-yeyesus-menfes",
+      "title": "Des yemil yeyesus menfes (Jesu Ånd som gir glede)"
+    },
+    {
+      "type": "text",
+      "content": "Søndagsskole for barn 3-12"
+    },
+    {
+      "type": "song",
+      "slug": "pinsetekst-apostlenes-gjerninger",
+      "title": "Apostlenes Gjerninger 2,1-11"
+    },
+    {
+      "type": "song",
+      "slug": "o-store-gud",
+      "title": "284 How Great thou art / O store Gud"
+    },
+    {
+      "type": "text",
+      "content": "Preken v/ Gabriel Stephen"
+    },
+    {
+      "type": "song",
+      "slug": "what-a-mighty-god-we-serve",
+      "title": "What a mighty God we serve"
+    },
+    {
+      "type": "song",
+      "slug": "holy-forever",
+      "title": "Holy forever"
+    },
+    {
+      "type": "song",
+      "slug": "trosbekjennelsen",
+      "title": "Trosbekjennelsen"
+    },
+    {
+      "type": "song",
+      "slug": "lord-youre-holy",
+      "title": "Lord, You're Holy"
+    },
+    {
+      "type": "text",
+      "content": "Kollekt"
+    },
+    {
+      "type": "text",
+      "content": "Vipps nr: 928137"
+    },
+    {
+      "type": "text",
+      "content": "Takkebønn for kollekten"
+    },
+    {
+      "type": "text",
+      "content": "FORBØNN for kirken og verden"
+    },
+    {
+      "type": "song",
+      "slug": "fredens-gud",
+      "title": "637 Yarraba Ssalami / Fredens Gud la det regne"
+    },
+    {
+      "type": "song",
+      "slug": "herrens-bonn",
+      "title": "Herrens bønn"
+    },
+    {
+      "type": "song",
+      "slug": "paskerapp",
+      "title": "Påskerapp"
+    },
+    {
+      "type": "song",
+      "slug": "salige-visshet",
+      "title": "490 Blessed Assurance / Salige Visshet"
+    },
+    {
+      "type": "text",
+      "content": "Velsignelse"
+    },
+    {
+      "type": "song",
+      "slug": "vinden-kjenner-ingen-grenser",
+      "title": "700 Vinden kjenner ingen grenser"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 ---
-title: O Store Gud
+title: "How Great Thou art / O store Gud (284)"
 author: Carl Boberg (1885)
 ---
 
