@@ -7,6 +7,7 @@ type Props = {
   item: ServiceItem;
   prev: string | null;
   next: string | null;
+  songContent?: string | null;
 };
 
 function linkStyle(enabled: boolean) {
@@ -22,7 +23,7 @@ function linkStyle(enabled: boolean) {
   } as const;
 }
 
-export default function ServiceItemContent({ item, prev, next }: Props) {
+export default function ServiceItemContent({ item, prev, next, songContent }: Props) {
   const getItemTitle = (item: ServiceItem): string => {
     if (item.type === "song") return item.title ?? item.slug;
     if (item.type === "heading") return item.title;
@@ -33,6 +34,9 @@ export default function ServiceItemContent({ item, prev, next }: Props) {
 
   const getItemContent = (item: ServiceItem): React.ReactNode => {
     if (item.type === "song") {
+      if (songContent) {
+        return <div dangerouslySetInnerHTML={{ __html: songContent }} />;
+      }
       return <p style={{ color: "var(--muted)" }}>Sangen er lastet fra {item.slug}</p>;
     }
     if (item.type === "heading") {
