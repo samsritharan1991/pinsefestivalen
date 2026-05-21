@@ -67,9 +67,6 @@ export default function ServiceItemContent({ item, prev, next }: Props) {
         <Link href={prev ? `/programpunkt/${prev}` : "#"} style={linkStyle(!!prev)} aria-disabled={!prev}>
           ← Forrige
         </Link>
-        <Link href="/gudstjeneste" style={linkStyle(true)}>
-          Tilbake til program
-        </Link>
         <Link href={next ? `/programpunkt/${next}` : "#"} style={linkStyle(!!next)} aria-disabled={!next}>
           Neste →
         </Link>
