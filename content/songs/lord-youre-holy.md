@@ -1,8 +1,6 @@
 ---
-title: "Lord, You're Holy"
+title: Lord, You're Holy
 ---
-
-# Lord, You're Holy
 
 Lord, You're holy! Lord, You're holy! 
 And we lift You up 
@@ -31,20 +29,20 @@ And magnify Your name.
 There's not enough words that I can say 
 To tell You how much I appreciate 
 All the wonderful things You've given me 
-Your loving kindness,Your tender mercies 
+Your loving kindness, Your tender mercies 
 It's my desire to praise You 
 And tell You how much I love You 
 You're worthy of all the honor 
 Lord You're worthy of all the praise 
  
-I don't know how,You can love me 
+I don't know how, You can love me 
 How You could give me so much mercy 
-You didn't have to suffer and die for me
- Way back on Calvary
- But I just wanna thank You
+You didn't have to suffer and die for me 
+Way back on Calvary 
+But I just wanna thank You 
  
 I thank You! I thank You! I thank You! 
-How You Wonderful my lord!
+How Wonderful my lord!
  
 Wonderful, glorious, holy, and righteous 
 Victorious, conqueror, triumphant and Mighty.
