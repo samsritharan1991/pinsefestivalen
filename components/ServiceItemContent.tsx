@@ -60,7 +60,7 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
           <p>{item.content}</p>
           {item.vippsNumber && (
             <a
-              href={`vipps://${item.vippsNumber}`}
+              href={`https://vipps.no/28/2/02/01/${item.vippsNumber}`}
               style={{
                 display: "inline-block",
                 marginTop: "1.5em",
