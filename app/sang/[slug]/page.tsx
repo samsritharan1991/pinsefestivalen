@@ -16,8 +16,8 @@ export default async function SongPage({
   const service = getService("today");
   type ServiceItem = Service["items"][number];
   const songSlugsInOrder = service.items
-    .filter((i: ServiceItem) => i.type === "song")
-    .map((i: ServiceItem) => i.slug);
+    .filter((i: ServiceItem): i is Extract<ServiceItem, { type: "song" }> => i.type === "song")
+    .map((i) => i.slug);
   const idx = songSlugsInOrder.indexOf(song.slug);
   const prev = idx > 0 ? songSlugsInOrder[idx - 1] : null;
   const next =
