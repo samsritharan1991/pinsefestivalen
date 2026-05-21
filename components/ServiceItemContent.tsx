@@ -110,7 +110,7 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
       )}
       <div style={{ marginTop: "1.5em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
 
-      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", gap: "1em", justifyContent: "space-between", padding: "1em 2em", background: "white", borderTop: "1px solid #e0e0e0" }}>
+      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", gap: "1em", justifyContent: "space-between", padding: "1em 2em", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
         <Link href={prev ? `/programpunkt/${prev}` : "#"} style={linkStyle(!!prev)} aria-disabled={!prev}>
           {t.song.prev}
         </Link>
