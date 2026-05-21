@@ -54,13 +54,11 @@ export default function ServiceItemContent({ item, prev, next }: Props) {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      <div style={{ flex: 1 }}>
-        <h1>{getItemTitle(item)}</h1>
-        <div style={{ marginTop: "2em" }}>{getItemContent(item)}</div>
-      </div>
+    <div>
+      <h1>{getItemTitle(item)}</h1>
+      <div style={{ marginTop: "2em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
 
-      <div style={{ marginTop: "3em", display: "flex", gap: "1em", justifyContent: "space-between", paddingBottom: "2em" }}>
+      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", gap: "1em", justifyContent: "space-between", padding: "1em 2em", background: "white", borderTop: "1px solid #e0e0e0" }}>
         <Link href={prev ? `/programpunkt/${prev}` : "#"} style={linkStyle(!!prev)} aria-disabled={!prev}>
           ← Forrige
         </Link>
