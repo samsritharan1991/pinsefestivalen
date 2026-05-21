@@ -73,10 +73,14 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
       </div>
       <h1>{getItemTitle(item)}</h1>
       {item.type === "song" && song?.titleTranslation && (
-        <p style={{ color: "var(--muted)", marginTop: "0.5em" }}>{song.titleTranslation}</p>
+        <p style={{ color: "#888", marginTop: "0.5em", fontSize: "0.95em", fontStyle: "italic" }}>
+          {song.titleTranslation}
+        </p>
       )}
       {item.type === "song" && song?.singers && (
-        <p style={{ color: "var(--muted)", marginTop: "0.25em" }}>{song.singers}</p>
+        <p style={{ color: "#666", marginTop: "0.75em", fontSize: "0.9em", fontWeight: "500" }}>
+          {song.singers}
+        </p>
       )}
       <div style={{ marginTop: "1.5em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
 
