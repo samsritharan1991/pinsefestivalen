@@ -35,7 +35,7 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
   const getItemTitle = (item: ServiceItem): string => {
     if (item.type === "song") return song?.title ?? item.title ?? item.slug;
     if (item.type === "heading") return item.title;
-    if (item.type === "text") return item.title ?? item.content;
+    if (item.type === "text") return item.content;
     if (item.type === "list") return "Liste";
     return "Element";
   };
@@ -58,7 +58,7 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
     if (item.type === "text") {
       return (
         <>
-          <p>{item.content}</p>
+          {item.description && <p>{item.description}</p>}
           {item.vippsNumber && (
             <a
               href={`https://vipps.no/28/2/02/01/${item.vippsNumber}`}
