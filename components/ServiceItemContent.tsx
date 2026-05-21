@@ -13,7 +13,7 @@ function linkStyle(enabled: boolean) {
   return {
     padding: "0.5em 1em",
     borderRadius: "0.25em",
-    background: "var(--accent)",
+    background: "#d97e3a",
     color: "white",
     textDecoration: "none",
     opacity: enabled ? 1 : 0.45,
@@ -54,11 +54,13 @@ export default function ServiceItemContent({ item, prev, next }: Props) {
   };
 
   return (
-    <>
-      <h1>{getItemTitle(item)}</h1>
-      <div style={{ marginTop: "2em" }}>{getItemContent(item)}</div>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <div style={{ flex: 1 }}>
+        <h1>{getItemTitle(item)}</h1>
+        <div style={{ marginTop: "2em" }}>{getItemContent(item)}</div>
+      </div>
 
-      <div style={{ marginTop: "3em", display: "flex", gap: "1em", justifyContent: "space-between" }}>
+      <div style={{ marginTop: "3em", display: "flex", gap: "1em", justifyContent: "space-between", paddingBottom: "2em" }}>
         <Link href={prev ? `/programpunkt/${prev}` : "#"} style={linkStyle(!!prev)} aria-disabled={!prev}>
           ← Forrige
         </Link>
@@ -69,6 +71,6 @@ export default function ServiceItemContent({ item, prev, next }: Props) {
           Neste →
         </Link>
       </div>
-    </>
+    </div>
   );
 }
