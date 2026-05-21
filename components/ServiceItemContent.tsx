@@ -72,6 +72,12 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
         </Link>
       </div>
       <h1>{getItemTitle(item)}</h1>
+      {item.type === "song" && song?.titleTranslation && (
+        <p style={{ color: "var(--muted)", marginTop: "0.5em" }}>{song.titleTranslation}</p>
+      )}
+      {item.type === "song" && song?.singers && (
+        <p style={{ color: "var(--muted)", marginTop: "0.25em" }}>{song.singers}</p>
+      )}
       <div style={{ marginTop: "1.5em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
 
       <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", gap: "1em", justifyContent: "space-between", padding: "1em 2em", background: "white", borderTop: "1px solid #e0e0e0" }}>
