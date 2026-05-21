@@ -1,13 +1,14 @@
 {
   "title": "Gudstjeneste - Pinsefestivalen",
-  "date": "Gudstjeneste i Grorud, 25.5.2026 - 2. Pinsedag",
   "items": [
     {
       "type": "text",
+      "slug": "klokkeringing",
       "content": "Klokkeringing"
     },
     {
       "type": "text",
+      "slug": "inngangsprosesjon",
       "content": "Inngangsprosesjon"
     },
     {
@@ -17,18 +18,22 @@
     },
     {
       "type": "text",
+      "slug": "nadehilsen-og-inngangsord",
       "content": "Nådehilsen og Inngangsord"
     },
     {
       "type": "text",
+      "slug": "samlingsbønn",
       "content": "Samlingsbønn"
     },
     {
       "type": "text",
+      "slug": "bønnerop",
       "content": "Bønnerop"
     },
     {
       "type": "text",
+      "slug": "gloria-lovsang",
       "content": "GLORIA – Lovsang"
     },
     {
@@ -38,6 +43,7 @@
     },
     {
       "type": "text",
+      "slug": "søndagsskole-for-barn-3-12",
       "content": "Søndagsskole for barn 3-12"
     },
     {
@@ -52,6 +58,7 @@
     },
     {
       "type": "text",
+      "slug": "preken-v-gabriel-stephen",
       "content": "Preken v/ Gabriel Stephen"
     },
     {
@@ -76,19 +83,23 @@
     },
     {
       "type": "text",
+      "slug": "kollekt",
       "content": "Kollekt"
     },
     {
       "type": "text",
+      "slug": "vipps-nr-928137",
       "content": "Vipps nr: 928137"
     },
     {
       "type": "text",
+      "slug": "takkebønn-for-kollekten",
       "content": "Takkebønn for kollekten"
     },
     {
       "type": "text",
-      "content": "FORBØNN for kirken og verden"
+      "slug": "forbønn-for-kirken-og-verden",
+      "content": "Forbønn for kirken og verden"
     },
     {
       "type": "song",
@@ -112,6 +123,7 @@
     },
     {
       "type": "text",
+      "slug": "velsignelse",
       "content": "Velsignelse"
     },
     {

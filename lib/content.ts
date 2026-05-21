@@ -15,9 +15,9 @@ export type Song = {
 
 export type ServiceItem =
   | { type: "song"; slug: string; title?: string }
-  | { type: "heading"; title: string }
-  | { type: "text"; content: string }
-  | { type: "list"; items: string[] };
+  | { type: "heading"; slug: string; title: string }
+  | { type: "text"; slug: string; content: string }
+  | { type: "list"; slug: string; items: string[] };
 
 export type Service = {
   title: string;
@@ -51,4 +51,25 @@ export function getService(name: string): Service {
   const fullPath = path.join(SERVICES_DIR, `${name}.json`);
   const raw = fs.readFileSync(fullPath, "utf8");
   return JSON.parse(raw) as Service;
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export function getServiceItemSlugs(serviceName: string = "today"): string[] {
+  const service = getService(serviceName);
+  return service.items.map((item) => item.slug);
+}
+
+export async function getServiceItemBySlug(slug: string, serviceName: string = "today"): Promise<ServiceItem> {
+  const service = getService(serviceName);
+  const item = service.items.find((i) => i.slug === slug);
+  if (!item) throw new Error(`Item with slug "${slug}" not found`);
+  return item;
 }

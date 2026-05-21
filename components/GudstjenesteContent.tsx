@@ -12,11 +12,15 @@ export default function GudstjenesteContent({ service }: Props) {
   const t = getTranslations(locale);
 
   const renderItem = (item: ServiceItem, idx: number) => {
+    const linkStyle = { fontWeight: "500", color: "var(--accent)", textDecoration: "none" };
+
     switch (item.type) {
       case "heading":
         return (
           <h2 key={`heading-${idx}`} style={{ marginTop: "1.5em" }}>
-            {item.title}
+            <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
+              {item.title}
+            </Link>
           </h2>
         );
       case "text":
@@ -25,21 +29,27 @@ export default function GudstjenesteContent({ service }: Props) {
           prevTextItem && prevTextItem.type === "text" && prevTextItem.content === "Kollekt";
         return (
           <p key={`text-${idx}`} style={{ marginBottom: "0.5em", marginLeft: isIndentedText ? "1.5em" : "0" }}>
-            {item.content}
+            <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
+              {item.content}
+            </Link>
           </p>
         );
       case "list":
         return (
           <ul key={`list-${idx}`} style={{ marginBottom: "0.5em" }}>
             {item.items.map((listItem, listIdx) => (
-              <li key={`${idx}-${listIdx}`}>{listItem}</li>
+              <li key={`${idx}-${listIdx}`}>
+                <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
+                  {listItem}
+                </Link>
+              </li>
             ))}
           </ul>
         );
       case "song":
         return (
           <div key={`song-${idx}`} style={{ marginBottom: "0.8em" }}>
-            <Link href={`/sang/${item.slug}`} style={{ fontWeight: "500" }}>
+            <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
               {item.title ?? item.slug.replaceAll("-", " ")}
             </Link>
           </div>
