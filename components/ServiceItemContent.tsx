@@ -55,6 +55,11 @@ export default function ServiceItemContent({ item, prev, next }: Props) {
 
   return (
     <div>
+      <div style={{ marginBottom: "1em" }}>
+        <Link href="/gudstjeneste" style={{ color: "#d97e3a", textDecoration: "none", fontWeight: "500" }}>
+          ← Tilbake til program
+        </Link>
+      </div>
       <h1>{getItemTitle(item)}</h1>
       <div style={{ marginTop: "2em", paddingBottom: "7em" }}>{getItemContent(item)}</div>
 
