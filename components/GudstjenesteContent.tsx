@@ -11,13 +11,30 @@ export default function GudstjenesteContent({ service }: Props) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
 
+  const getIconAndColor = (type: ServiceItem["type"]) => {
+    switch (type) {
+      case "song":
+        return { icon: "🎵", color: "#d97e3a" };
+      case "heading":
+        return { icon: "📖", color: "#666" };
+      case "text":
+        return { icon: "📝", color: "#555" };
+      case "list":
+        return { icon: "📋", color: "#666" };
+      default:
+        return { icon: "•", color: "#999" };
+    }
+  };
+
   const renderItem = (item: ServiceItem, idx: number) => {
+    const { icon, color } = getIconAndColor(item.type);
     const linkStyle = { fontWeight: "500", color: "var(--accent)", textDecoration: "none" };
 
     switch (item.type) {
       case "heading":
         return (
-          <h2 key={`heading-${idx}`} style={{ marginTop: "1.5em" }}>
+          <h2 key={`heading-${idx}`} style={{ marginTop: "1.5em", marginBottom: "0.5em", color: color }}>
+            <span style={{ marginRight: "0.5em" }}>{icon}</span>
             <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
               {item.title}
             </Link>
@@ -28,7 +45,8 @@ export default function GudstjenesteContent({ service }: Props) {
         const isIndentedText =
           prevTextItem && prevTextItem.type === "text" && prevTextItem.content === "Kollekt";
         return (
-          <p key={`text-${idx}`} style={{ marginBottom: "0.5em", marginLeft: isIndentedText ? "1.5em" : "0" }}>
+          <p key={`text-${idx}`} style={{ marginBottom: "0.6em", marginLeft: isIndentedText ? "2em" : "0", display: "flex", alignItems: "center", gap: "0.5em" }}>
+            <span style={{ color: color, flexShrink: 0 }}>{icon}</span>
             <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
               {item.content}
             </Link>
@@ -36,9 +54,10 @@ export default function GudstjenesteContent({ service }: Props) {
         );
       case "list":
         return (
-          <ul key={`list-${idx}`} style={{ marginBottom: "0.5em" }}>
+          <ul key={`list-${idx}`} style={{ marginBottom: "0.8em", marginLeft: "0" }}>
             {item.items.map((listItem, listIdx) => (
-              <li key={`${idx}-${listIdx}`}>
+              <li key={`${idx}-${listIdx}`} style={{ display: "flex", alignItems: "center", gap: "0.5em", marginBottom: "0.3em" }}>
+                <span style={{ color: color, flexShrink: 0 }}>{icon}</span>
                 <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
                   {listItem}
                 </Link>
@@ -48,8 +67,9 @@ export default function GudstjenesteContent({ service }: Props) {
         );
       case "song":
         return (
-          <div key={`song-${idx}`} style={{ marginBottom: "0.8em" }}>
-            <Link href={`/programpunkt/${item.slug}`} style={linkStyle}>
+          <div key={`song-${idx}`} style={{ marginBottom: "1em", padding: "0.75em 0.75em", backgroundColor: "#f9f5f0", borderLeft: `4px solid ${color}`, display: "flex", alignItems: "center", gap: "0.75em" }}>
+            <span style={{ color: color, fontSize: "1.2em", flexShrink: 0 }}>{icon}</span>
+            <Link href={`/programpunkt/${item.slug}`} style={{ ...linkStyle, color: color }}>
               {item.title ?? item.slug.replaceAll("-", " ")}
             </Link>
           </div>
