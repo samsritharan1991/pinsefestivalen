@@ -1,16 +1,13 @@
-"use client";
+import { getService } from "@/lib/content";
+import FestivalProgram from "@/components/FestivalProgram";
 
-import { getTranslations } from "@/lib/i18n";
-import { useLocale } from "@/components/LocaleProvider";
-
-export default function FestivalenPage() {
-  const { locale } = useLocale();
-  const t = getTranslations(locale);
+export default async function FestivalenPage() {
+  const service = getService("festival");
 
   return (
-    <>
-      <h1>{t.festivalen.title}</h1>
-      <p style={{ color: "var(--muted)" }}>{t.festivalen.placeholder}</p>
-    </>
+    <FestivalProgram
+      items={service.items as any}
+      title={service.title}
+    />
   );
 }

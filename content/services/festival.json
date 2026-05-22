@@ -1,0 +1,132 @@
+{
+  "title": "Festivalprogrammet",
+  "date": "Pinsefestivalen 2026",
+  "items": [
+    {
+      "time": "13:00",
+      "name": "Tribes",
+      "type": "Musikk og dans",
+      "actor": "Jesus is Lord Eastern & Senteral Oslo"
+    },
+    {
+      "time": "13:05",
+      "name": "Den hemmelige kraften",
+      "type": "Musikk (rap)",
+      "actor": "Keven og Aron tilknytet til Barnas Tro"
+    },
+    {
+      "time": "13:10",
+      "name": "Velkommen",
+      "type": "Tale",
+      "actor": "Lemma Desta"
+    },
+    {
+      "time": "13:13",
+      "name": "Introduksjon av programleder",
+      "type": "Tale",
+      "actor": "Lemma Desta og Zoe Skjæraasen"
+    },
+    {
+      "time": "13:15",
+      "name": "Praktisk informasjon",
+      "type": "Tale",
+      "actor": "Lemma Desta og Zoe Skjæraasen"
+    },
+    {
+      "time": "13:20",
+      "name": "",
+      "type": "Musikk",
+      "actor": "All nations full gospel"
+    },
+    {
+      "time": "13:25",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Ukrainsk lovsangsteam"
+    },
+    {
+      "time": "13:30",
+      "name": "Blomsteroverreklelse",
+      "type": "Tale",
+      "actor": "Generalsekretær i Norges Kristne Råd Henrik Erhard Hermansen"
+    },
+    {
+      "time": "13:35",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Pentecost international"
+    },
+    {
+      "time": "13:40",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Tamil"
+    },
+    {
+      "time": "13:45",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Ethiopisk/Eritreisk ortodoks"
+    },
+    {
+      "time": "13:50",
+      "name": "Pantomime",
+      "type": "Pantomime",
+      "actor": "Focolare (Jemi og Tove)"
+    },
+    {
+      "time": "14:00",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Gresk ortodoks (IKKE Levende vann)"
+    },
+    {
+      "time": "14:05",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Levende vann"
+    },
+    {
+      "time": "14:10",
+      "name": "Hilsen",
+      "type": "Tale",
+      "actor": "Ashraf Tannous"
+    },
+    {
+      "time": "14:20",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Oromo"
+    },
+    {
+      "time": "14:25",
+      "name": "Tro og tilhørighet",
+      "type": "Samtale",
+      "actor": "Truls Peter Andersen, Georg, Priscilla Aboagye"
+    },
+    {
+      "time": "14:45",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Eritreisk Luthersk"
+    },
+    {
+      "time": "14:50",
+      "name": "Frans av Assisi",
+      "type": "Sketsj",
+      "actor": "St. Johannes Ungdom"
+    },
+    {
+      "time": "15:05",
+      "name": "Vår Far i himmelen",
+      "type": "Sang",
+      "actor": "St. Johannes Ungdom"
+    },
+    {
+      "time": "",
+      "name": "",
+      "type": "Musikk",
+      "actor": "Urdu felleskapet"
+    }
+  ]
+}
