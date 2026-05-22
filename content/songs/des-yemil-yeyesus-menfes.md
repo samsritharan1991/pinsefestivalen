@@ -4,7 +4,8 @@ titleTranslation: "Jesu Ånd som gir glede"
 singers: "YBC Barnekor (Amharisk)"
 ---
 
-## Vers 1 - Amharic
+### Amharic
+## Vers 1
 
 Des yemil yeyesus menfes  
 Wede lay kef aderegegne  
@@ -18,7 +19,9 @@ Haleluya zemralew kibir lesimu
 Haleluya zemralew kibir lesimu  
 Haleluya zemralew kibir lesimu
 
-## Vers 2 - Oversettelse
+
+### Norsk oversettelse
+## Vers 1
 
 Jesu Ånd som gir glede  
 Jesu Ånd som gir glede  
