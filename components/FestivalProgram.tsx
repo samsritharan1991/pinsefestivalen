@@ -76,7 +76,8 @@ export default function FestivalProgram({ items, title }: Props) {
             <div
               style={{
                 display: "flex",
-                alignItems: "baseline",
+                alignItems: "center",
+                justifyContent: "space-between",
                 gap: "0.75em",
               }}
             >
@@ -85,7 +86,6 @@ export default function FestivalProgram({ items, title }: Props) {
                   fontSize: "1.6em",
                   fontWeight: "700",
                   color: "var(--accent)",
-                  minWidth: "70px",
                 }}
               >
                 {item.time}
@@ -101,6 +101,7 @@ export default function FestivalProgram({ items, title }: Props) {
                   fontWeight: "600",
                   whiteSpace: "nowrap",
                   display: "inline-block",
+                  flexShrink: 0,
                 }}
               >
                 {getTypeIcon(item.type)} {item.type}
