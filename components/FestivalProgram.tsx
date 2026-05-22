@@ -94,12 +94,13 @@ export default function FestivalProgram({ items, title }: Props) {
                 style={{
                   fontSize: "0.85em",
                   backgroundColor: "transparent",
-                  color: "var(--accent)",
-                  border: "1.5px solid var(--accent)",
-                  padding: "0.25em 0.6em",
+                  color: "#d97e3a",
+                  border: "1.5px solid #d97e3a",
+                  padding: "0.3em 0.65em",
                   borderRadius: "20px",
                   fontWeight: "600",
                   whiteSpace: "nowrap",
+                  display: "inline-block",
                 }}
               >
                 {getTypeIcon(item.type)} {item.type}
