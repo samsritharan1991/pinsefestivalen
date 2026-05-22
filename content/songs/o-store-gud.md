@@ -49,7 +49,7 @@ Og troens mål er nådd, så jeg får se,
 Vil evighetens klokker sjelen kalle
 For tronen mellom skaren hvit som sne.
 
-### Refreng
+*Refreng:*
 
 Da bryter lovsang ifra sjelen ut:
 
