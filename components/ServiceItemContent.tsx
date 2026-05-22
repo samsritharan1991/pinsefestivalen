@@ -65,28 +65,32 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
             item.description && <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>
           )}
           {item.vippsNumber && (
-            <button
-              onClick={() => {
-                const vippsUrl = `vipps://pay/${item.vippsNumber}`;
-                window.location.href = vippsUrl;
-                setTimeout(() => {
-                  window.location.href = `https://www.vipps.no/`;
-                }, 500);
-              }}
-              style={{
-                marginTop: "1.5em",
-                padding: "0.75em 1.5em",
-                backgroundColor: "#d97e3a",
-                color: "white",
-                border: "none",
-                borderRadius: "0.25em",
-                fontWeight: "500",
-                fontSize: "1em",
-                cursor: "pointer",
-              }}
-            >
-              {t.kollekt.payWithVipps}
-            </button>
+            <div style={{ marginTop: "1.5em" }}>
+              <p style={{ color: "var(--muted)", marginBottom: "0.5em" }}>
+                Støtt Pinsefestivalen via Vipps: {item.vippsNumber}
+              </p>
+              <button
+                onClick={() => {
+                  const vippsUrl = `vipps://pay/${item.vippsNumber}`;
+                  window.location.href = vippsUrl;
+                  setTimeout(() => {
+                    window.location.href = `https://www.vipps.no/`;
+                  }, 500);
+                }}
+                style={{
+                  padding: "0.75em 1.5em",
+                  backgroundColor: "#d97e3a",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "0.25em",
+                  fontWeight: "500",
+                  fontSize: "1em",
+                  cursor: "pointer",
+                }}
+              >
+                {t.kollekt.payWithVipps}
+              </button>
+            </div>
           )}
         </>
       );
