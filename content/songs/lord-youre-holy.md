@@ -3,7 +3,7 @@ title: Lord, You're Holy
 singers: Ukrainsk Barnekor
 ---
 
-## Refr
+## Refreng
 
 Lord, You're holy! Lord, You're holy!
 
@@ -37,7 +37,7 @@ This is what I'll do
 
 I lift my hands and cry holy
 
-## Refr
+## Refreng
 
 Lord, You're holy! Lord, You're holy!
 
