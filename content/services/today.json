@@ -11,7 +11,8 @@
     {
       "type": "text",
       "slug": "inngangsprosesjon",
-      "content": "Inngangsprosesjon"
+      "content": "Inngangsprosesjon",
+      "icon": "📖"
     },
     {
       "type": "song",
@@ -22,7 +23,8 @@
       "type": "text",
       "slug": "nadehilsen-og-inngangsord",
       "content": "Nådehilsen og Inngangsord",
-      "description": "Efeserne 2,19\n\nLa oss så feire denne gudstjenesten i Faderens,\nog Sønnens, og den Hellige Ånds navn."
+      "description": "Efeserne 2,19\n\nLa oss så feire denne gudstjenesten i Faderens,\nog Sønnens, og den Hellige Ånds navn.",
+      "icon": "📖"
     },
     {
       "type": "text",
