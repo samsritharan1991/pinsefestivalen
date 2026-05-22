@@ -1,4 +1,4 @@
-import { getService, getServiceItemSlugs, getServiceItemBySlug, getSongBySlug, type Service } from "@/lib/content";
+import { getService, getServiceItemSlugs, getServiceItemBySlug, getSongBySlug, getTextContentBySlug, type Service } from "@/lib/content";
 import ServiceItemContent from "@/components/ServiceItemContent";
 
 export async function generateStaticParams() {
@@ -18,6 +18,11 @@ export default async function ProgrampunktPage({
     song = await getSongBySlug(item.slug);
   }
 
+  let textContent = null;
+  if (item.type === "text") {
+    textContent = await getTextContentBySlug(item.slug);
+  }
+
   const service = getService("today");
   type ServiceItem = Service["items"][number];
   const itemSlugsInOrder = service.items.map((i: ServiceItem) => i.slug);
@@ -25,5 +30,5 @@ export default async function ProgrampunktPage({
   const prev = idx > 0 ? itemSlugsInOrder[idx - 1] : null;
   const next = idx >= 0 && idx < itemSlugsInOrder.length - 1 ? itemSlugsInOrder[idx + 1] : null;
 
-  return <ServiceItemContent item={item} prev={prev} next={next} song={song} />;
+  return <ServiceItemContent item={item} prev={prev} next={next} song={song} textContent={textContent} />;
 }

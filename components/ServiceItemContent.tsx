@@ -13,6 +13,7 @@ type Props = {
   prev: string | null;
   next: string | null;
   song?: Song | null;
+  textContent?: string | null;
 };
 
 function linkStyle(enabled: boolean) {
@@ -28,7 +29,7 @@ function linkStyle(enabled: boolean) {
   } as const;
 }
 
-export default function ServiceItemContent({ item, prev, next, song }: Props) {
+export default function ServiceItemContent({ item, prev, next, song, textContent }: Props) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
 
@@ -58,7 +59,11 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
     if (item.type === "text") {
       return (
         <>
-          {item.description && <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>}
+          {textContent ? (
+            <article className="lyrics" dangerouslySetInnerHTML={{ __html: textContent }} />
+          ) : (
+            item.description && <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>
+          )}
           {item.vippsNumber && (
             <a
               href={`https://vipps.no/28/2/02/01/${item.vippsNumber}`}

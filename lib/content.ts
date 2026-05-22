@@ -5,6 +5,7 @@ import { remark } from "remark";
 import html from "remark-html";
 
 const SONGS_DIR = path.join(process.cwd(), "content", "songs");
+const TEXTS_DIR = path.join(process.cwd(), "content", "texts");
 const SERVICES_DIR = path.join(process.cwd(), "content", "services");
 
 export type Song = {
@@ -86,6 +87,15 @@ export async function getSongBySlug(slug: string): Promise<Song> {
     author: data.author ? String(data.author) : undefined,
     singers: data.singers ? String(data.singers) : undefined,
   };
+}
+
+export async function getTextContentBySlug(slug: string): Promise<string> {
+  const fullPath = path.join(TEXTS_DIR, `${slug}.md`);
+  if (!fs.existsSync(fullPath)) return "";
+
+  const file = fs.readFileSync(fullPath, "utf8");
+  const processed = await remark().use(html).process(file);
+  return processed.toString();
 }
 
 export function getService(name: string): Service {
