@@ -108,7 +108,8 @@
     {
       "type": "text",
       "slug": "forbonn-for-kirken-og-verden",
-      "content": "Forbønn for kirken og verden"
+      "content": "Forbønn for kirken og verden",
+      "icon": "🙏"
     },
     {
       "type": "song",
