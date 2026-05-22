@@ -83,7 +83,8 @@
     {
       "type": "song",
       "slug": "trosbekjennelsen",
-      "title": "Trosbekjennelsen"
+      "title": "Trosbekjennelsen",
+      "icon": "✝️"
     },
     {
       "type": "song",
