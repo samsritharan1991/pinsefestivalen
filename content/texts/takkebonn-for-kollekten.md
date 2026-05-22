@@ -1,3 +1,1 @@
-## Takkebønn for kollekten
-
-Bønn av Jurek
+Bønn av Jurek Laub
