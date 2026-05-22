@@ -15,73 +15,121 @@ type Props = {
   title: string;
 };
 
+const typeIcons: Record<string, string> = {
+  "Musikk": "🎵",
+  "Musikk og dans": "🎶",
+  "Musikk (rap)": "🎤",
+  "Tale": "🎤",
+  "Pantomime": "🎭",
+  "Samtale": "💬",
+  "Sketsj": "🎭",
+  "Sang": "🎵",
+};
+
 export default function FestivalProgram({ items, title }: Props) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
 
+  const getTypeIcon = (type: string): string => {
+    for (const [key, icon] of Object.entries(typeIcons)) {
+      if (type.startsWith(key)) return icon;
+    }
+    return "🎪";
+  };
+
   return (
     <>
-      <h1>{title}</h1>
-      <div style={{ overflowX: "auto", marginTop: "2em", width: "100%" }}>
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "collapse",
-            fontSize: "0.85em",
-          }}
-        >
-          <thead>
-            <tr
+      <h1 style={{ marginBottom: "0.5em" }}>{title}</h1>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+          gap: "1.5em",
+          marginTop: "2em",
+        }}
+      >
+        {items.map((item, idx) => (
+          <div
+            key={idx}
+            style={{
+              backgroundColor: "var(--background-secondary)",
+              border: "1px solid var(--border)",
+              borderRadius: "12px",
+              padding: "1.5em",
+              boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+              transition: "all 0.2s ease",
+              cursor: "default",
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.75em",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.15)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
+          >
+            <div
               style={{
-                borderBottom: "2px solid var(--border)",
-                backgroundColor: "var(--background-secondary)",
+                display: "flex",
+                alignItems: "baseline",
+                gap: "0.75em",
               }}
             >
-              <th style={{ padding: "0.5em", textAlign: "left", fontWeight: "600", width: "60px" }}>
-                Tid
-              </th>
-              <th style={{ padding: "0.5em", textAlign: "left", fontWeight: "600", width: "25%" }}>
-                Program
-              </th>
-              <th style={{ padding: "0.5em", textAlign: "left", fontWeight: "600", width: "20%" }}>
-                Type
-              </th>
-              <th style={{ padding: "0.5em", textAlign: "left", fontWeight: "600", flex: 1 }}>
-                Aktør
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {items.map((item, idx) => (
-              <tr
-                key={idx}
+              <span
                 style={{
-                  borderBottom: "1px solid var(--border)",
-                  backgroundColor:
-                    idx % 2 === 0 ? "var(--background)" : "var(--background-secondary)",
+                  fontSize: "1.6em",
+                  fontWeight: "700",
+                  color: "var(--accent)",
+                  minWidth: "70px",
                 }}
               >
-                <td
-                  style={{
-                    padding: "0.5em",
-                    fontWeight: "600",
-                    width: "60px",
-                    color: "var(--accent)",
-                  }}
-                >
-                  {item.time}
-                </td>
-                <td style={{ padding: "0.5em", width: "25%" }}>{item.name}</td>
-                <td style={{ padding: "0.5em", width: "20%", color: "var(--muted)" }}>
-                  {item.type}
-                </td>
-                <td style={{ padding: "0.5em", color: "var(--muted)" }}>
-                  {item.actor}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                {item.time}
+              </span>
+              <span
+                style={{
+                  fontSize: "0.85em",
+                  backgroundColor: "var(--accent)",
+                  color: "var(--background)",
+                  padding: "0.25em 0.6em",
+                  borderRadius: "6px",
+                  fontWeight: "600",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {getTypeIcon(item.type)} {item.type}
+              </span>
+            </div>
+
+            {item.name && (
+              <h3
+                style={{
+                  margin: "0.5em 0 0 0",
+                  fontSize: "1.1em",
+                  fontWeight: "600",
+                  color: "var(--text)",
+                }}
+              >
+                {item.name}
+              </h3>
+            )}
+
+            <p
+              style={{
+                margin: "0.5em 0 0 0",
+                fontSize: "0.9em",
+                color: "var(--muted)",
+                lineHeight: "1.4",
+              }}
+            >
+              {item.actor}
+            </p>
+          </div>
+        ))}
       </div>
     </>
   );
