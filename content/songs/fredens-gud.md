@@ -2,8 +2,6 @@
 title: "Yarraba Ssalami / Fredens Gud la det regne (637)"
 ---
 
-## Vers 1
-
 Yarabba ssalami
 
 Amter alayna ssalam,
@@ -12,7 +10,7 @@ Yarabba ssalami
 
 Im la qulubana salam.
 
-## Vers 2
+## Norsk
 
 Fredens Gud, la det regne,
 
