@@ -26,7 +26,7 @@ All powers and positions
 
 Your name stands above them all
 
-## Refr
+## Refreng
 
 And the angels cry, ho-holy
 
@@ -48,7 +48,7 @@ Sing the song forever to the Lamb
 
 We'll sing the song forever and amen
 
-## Refr
+## Refreng
 
 And the angels cry, ho-holy
 

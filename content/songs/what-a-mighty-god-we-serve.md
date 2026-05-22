@@ -2,7 +2,7 @@
 title: "What a mighty God we serve"
 ---
 
-## Refr
+## Refreng
 
 What a mighty God we serve
 
@@ -26,7 +26,7 @@ He has done great thing
 
 Bless His holy name.
 
-## Refr
+## Refreng
 
 What a loving God we serve
 
