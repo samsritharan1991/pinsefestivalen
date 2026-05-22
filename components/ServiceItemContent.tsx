@@ -78,7 +78,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                 Støtt Pinsefestivalen via Vipps:
               </p>
               <button
-                onClick={() => copyToClipboard(item.vippsNumber)}
+                onClick={() => copyToClipboard(item.vippsNumber!)}
                 style={{
                   background: "none",
                   border: "3px solid #d97e3a",
