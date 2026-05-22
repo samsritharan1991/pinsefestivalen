@@ -28,7 +28,8 @@
       "type": "text",
       "slug": "samlingsbonn",
       "content": "Samlingsbønn",
-      "description": "Bønn av Jurek Laub og Yohannes Shanka"
+      "description": "Bønn av Jurek Laub og Yohannes Shanka",
+      "icon": "🙏"
     },
     {
       "type": "text",
