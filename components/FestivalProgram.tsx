@@ -93,10 +93,11 @@ export default function FestivalProgram({ items, title }: Props) {
               <span
                 style={{
                   fontSize: "0.85em",
-                  backgroundColor: "var(--accent)",
-                  color: "var(--background)",
+                  backgroundColor: "transparent",
+                  color: "var(--accent)",
+                  border: "1.5px solid var(--accent)",
                   padding: "0.25em 0.6em",
-                  borderRadius: "6px",
+                  borderRadius: "20px",
                   fontWeight: "600",
                   whiteSpace: "nowrap",
                 }}
