@@ -74,25 +74,26 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
           )}
           {item.vippsNumber && (
             <div style={{ marginTop: "1.5em", textAlign: "center" }}>
-              <p style={{ color: "var(--muted)", marginBottom: "0.5em" }}>
-                Støtt Pinsefestivalen via Vipps:{" "}
-                <button
-                  onClick={() => copyToClipboard(item.vippsNumber)}
-                  style={{
-                    background: "none",
-                    border: "1px solid var(--muted)",
-                    color: "var(--accent)",
-                    padding: "0.2em 0.5em",
-                    borderRadius: "4px",
-                    cursor: "pointer",
-                    fontWeight: "600",
-                    fontSize: "0.95em",
-                  }}
-                  title="Klikk for å kopiere"
-                >
-                  {copied ? "✓ Kopiert!" : item.vippsNumber}
-                </button>
+              <p style={{ color: "var(--muted)", marginBottom: "0.75em" }}>
+                Støtt Pinsefestivalen via Vipps:
               </p>
+              <button
+                onClick={() => copyToClipboard(item.vippsNumber)}
+                style={{
+                  background: "none",
+                  border: "2px solid var(--accent)",
+                  color: "var(--accent)",
+                  padding: "0.5em 1em",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                  fontWeight: "700",
+                  fontSize: "1.4em",
+                  marginBottom: "1.5em",
+                }}
+                title="Klikk for å kopiere"
+              >
+                {copied ? "✓ Kopiert!" : item.vippsNumber}
+              </button>
               <a
                 href={`vipps://${item.vippsNumber}`}
                 style={{
