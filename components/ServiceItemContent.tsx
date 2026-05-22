@@ -83,7 +83,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                   cursor: "pointer",
                 }}
               >
-                {t.kollekt.payWithVipps}
+                Åpen Vipps
               </a>
             </div>
           )}
