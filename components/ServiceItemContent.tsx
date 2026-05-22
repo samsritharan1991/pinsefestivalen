@@ -81,8 +81,8 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                 onClick={() => copyToClipboard(item.vippsNumber)}
                 style={{
                   background: "none",
-                  border: "2px solid var(--accent)",
-                  color: "var(--accent)",
+                  border: "3px solid #d97e3a",
+                  color: "#333",
                   padding: "0.75em 1.5em",
                   borderRadius: "8px",
                   cursor: "pointer",
