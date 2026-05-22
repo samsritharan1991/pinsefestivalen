@@ -135,7 +135,8 @@
     {
       "type": "text",
       "slug": "velsignelse",
-      "content": "Velsignelse"
+      "content": "Velsignelse",
+      "icon": "✨"
     },
     {
       "type": "song",
