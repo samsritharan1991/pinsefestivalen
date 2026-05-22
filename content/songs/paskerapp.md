@@ -1,5 +1,6 @@
 ---
 title: "Påskerapp"
+singers: "Søndagsskole barna"
 ---
 
 ## Refreng

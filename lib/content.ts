@@ -50,10 +50,10 @@ function parseSongTitle(
 }
 
 export type ServiceItem =
-  | { type: "song"; slug: string; title?: string; titleTranslation?: string; singers?: string }
-  | { type: "heading"; slug: string; title: string }
-  | { type: "text"; slug: string; content: string; description?: string; vippsNumber?: string }
-  | { type: "list"; slug: string; items: string[] };
+  | { type: "song"; slug: string; title?: string; titleTranslation?: string; singers?: string; icon?: string }
+  | { type: "heading"; slug: string; title: string; icon?: string }
+  | { type: "text"; slug: string; content: string; description?: string; vippsNumber?: string; icon?: string }
+  | { type: "list"; slug: string; items: string[]; icon?: string };
 
 export type Service = {
   title: string;

@@ -11,23 +11,24 @@ export default function GudstjenesteContent({ service }: Props) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
 
-  const getIconAndColor = (type: ServiceItem["type"]) => {
-    switch (type) {
-      case "song":
-        return { icon: "🎵", color: "#d97e3a" };
-      case "heading":
-        return { icon: "📖", color: "#666" };
-      case "text":
-        return { icon: "📝", color: "#555" };
-      case "list":
-        return { icon: "📋", color: "#666" };
-      default:
-        return { icon: "•", color: "#999" };
-    }
+  const getIconAndColor = (item: ServiceItem) => {
+    const defaultIcons = {
+      song: { icon: "🎵", color: "#d97e3a" },
+      heading: { icon: "📖", color: "#666" },
+      text: { icon: "📝", color: "#555" },
+      list: { icon: "📋", color: "#666" },
+    };
+
+    const typeDefault = defaultIcons[item.type] || { icon: "•", color: "#999" };
+
+    return {
+      icon: item.icon ?? typeDefault.icon,
+      color: typeDefault.color,
+    };
   };
 
   const renderItem = (item: ServiceItem, idx: number) => {
-    const { icon, color } = getIconAndColor(item.type);
+    const { icon, color } = getIconAndColor(item);
     const boxStyle = { marginBottom: "0.8em", padding: "0.75em", backgroundColor: "#f9f5f0", borderLeft: `4px solid ${color}`, display: "flex", alignItems: "center", gap: "0.75em", fontWeight: "500", textDecoration: "none", color: color };
 
     switch (item.type) {
