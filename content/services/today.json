@@ -119,7 +119,8 @@
     {
       "type": "song",
       "slug": "herrens-bonn",
-      "title": "Herrens bønn"
+      "title": "Herrens bønn",
+      "icon": "🙏"
     },
     {
       "type": "song",
