@@ -17,11 +17,7 @@ export default function TopBar() {
   const { locale, setLocale } = useLocale();
   const t = getTranslations(locale);
 
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window === "undefined") return "light";
-    const init = (window as Window & { __INITIAL_THEME__?: string }).__INITIAL_THEME__;
-    return (init === "dark" || init === "light" ? init : "light") as "light" | "dark";
-  });
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const saved = (localStorage.getItem("theme") as "light" | "dark" | null) ?? "light";
@@ -117,6 +113,7 @@ export default function TopBar() {
               aria-label={t.topbar.light}
               aria-pressed={theme === "light"}
               title={t.topbar.light}
+              suppressHydrationWarning
             >
               <SunIcon />
             </button>
@@ -127,6 +124,7 @@ export default function TopBar() {
               aria-label={t.topbar.dark}
               aria-pressed={theme === "dark"}
               title={t.topbar.dark}
+              suppressHydrationWarning
             >
               <MoonIcon />
             </button>
