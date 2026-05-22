@@ -1,4 +1,4 @@
-## Apostlenes Gjerninger 2, 1-11
+### Pinsetekst lesing på forskjellige språk
 
 ## Norsk
 

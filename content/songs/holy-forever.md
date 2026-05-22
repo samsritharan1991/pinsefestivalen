@@ -1,5 +1,6 @@
 ---
 title: "Holy forever"
+singers: "All Nations Full Gospel"
 ---
 
 ## Vers 1

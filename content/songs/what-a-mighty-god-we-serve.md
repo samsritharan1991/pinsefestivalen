@@ -1,5 +1,6 @@
 ---
 title: "What a mighty God we serve"
+singers: "All Nations Full Gospel"
 ---
 
 ## Refreng
