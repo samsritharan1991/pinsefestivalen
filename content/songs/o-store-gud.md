@@ -10,7 +10,7 @@ Hva du har skapt i verden ved ditt ord.
 Ser universet med de mange baner
 Og vet alt liv oppholdes ved ditt bord,
 
-### Refreng
+*Refreng:*
 
 Da bryter lovsang ifra sjelen ut:
 
@@ -23,7 +23,7 @@ Som Gud har gjort fra første Adams tid,
 Og ser hvor trofast Herren alle stunder
 Har ført sitt folk igjennom livets strid;
 
-### Refreng
+*Refreng:*
 
 Da bryter lovsang ifra sjelen ut:
 
@@ -36,7 +36,7 @@ Ja, at han gikk omkring og gjorde vel,
 Inntil han sonet verdens synd og døde
 Og oppsto for å frelse hver en sjel;
 
-### Refreng
+*Refreng:*
 
 Da bryter lovsang ifra sjelen ut:
 
