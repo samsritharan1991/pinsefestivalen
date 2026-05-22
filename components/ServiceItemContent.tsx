@@ -58,7 +58,7 @@ export default function ServiceItemContent({ item, prev, next, song }: Props) {
     if (item.type === "text") {
       return (
         <>
-          {item.description && <p>{item.description}</p>}
+          {item.description && <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>}
           {item.vippsNumber && (
             <a
               href={`https://vipps.no/28/2/02/01/${item.vippsNumber}`}
