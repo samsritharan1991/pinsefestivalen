@@ -1,6 +1,3 @@
----
----
-
 Vår Far i himmelen!
 
 La navnet ditt helliges.

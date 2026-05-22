@@ -1,7 +1,3 @@
----
-title: "Trosbekjennelsen"
----
-
 ## Jeg tror på Gud Fader
 
 Jeg tror på Gud Fader, den allmektige,  

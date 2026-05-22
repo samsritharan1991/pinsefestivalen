@@ -82,9 +82,9 @@
       "title": "Holy forever"
     },
     {
-      "type": "song",
+      "type": "text",
       "slug": "trosbekjennelsen",
-      "title": "Trosbekjennelsen",
+      "content": "Trosbekjennelsen",
       "icon": "✝️"
     },
     {
