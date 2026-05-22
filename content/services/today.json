@@ -4,7 +4,8 @@
     {
       "type": "text",
       "slug": "klokkeringing",
-      "content": "Klokkeringing"
+      "content": "Klokkeringing",
+      "description": "3 klokkeslag"
     },
     {
       "type": "text",
