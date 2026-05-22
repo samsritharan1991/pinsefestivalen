@@ -5,7 +5,8 @@
       "type": "text",
       "slug": "klokkeringing",
       "content": "Klokkeringing",
-      "description": "3 klokkeslag"
+      "description": "3 klokkeslag",
+      "icon": "🔔"
     },
     {
       "type": "text",
