@@ -13,7 +13,7 @@ Ser universet med de mange baner
 
 Og vet alt liv oppholdes ved ditt bord,
 
-*Refreng:*
+## Refreng
 
 Da bryter lovsang ifra sjelen ut:
 
@@ -29,7 +29,7 @@ Og ser hvor trofast Herren alle stunder
 
 Har ført sitt folk igjennom livets strid;
 
-*Refreng:*
+## Refreng
 
 Da bryter lovsang ifra sjelen ut:
 
@@ -45,7 +45,7 @@ Inntil han sonet verdens synd og døde
 
 Og oppsto for å frelse hver en sjel;
 
-*Refreng:*
+## Refreng
 
 Da bryter lovsang ifra sjelen ut:
 
@@ -61,7 +61,7 @@ Vil evighetens klokker sjelen kalle
 
 For tronen mellom skaren hvit som sne.
 
-*Refreng:*
+## Refreng
 
 Da bryter lovsang ifra sjelen ut:
 
