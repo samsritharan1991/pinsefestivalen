@@ -65,7 +65,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
             item.description && <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>
           )}
           {item.vippsNumber && (
-            <div style={{ marginTop: "1.5em" }}>
+            <div style={{ marginTop: "1.5em", textAlign: "center" }}>
               <p style={{ color: "var(--muted)", marginBottom: "0.5em" }}>
                 Støtt Pinsefestivalen via Vipps: {item.vippsNumber}
               </p>
