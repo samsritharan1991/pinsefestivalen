@@ -83,12 +83,21 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                   background: "none",
                   border: "2px solid var(--accent)",
                   color: "var(--accent)",
-                  padding: "0.5em 1em",
-                  borderRadius: "6px",
+                  padding: "0.75em 1.5em",
+                  borderRadius: "8px",
                   cursor: "pointer",
                   fontWeight: "700",
                   fontSize: "1.4em",
                   marginBottom: "1.5em",
+                  transition: "all 0.2s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = "0 0 0 3px rgba(217, 126, 58, 0.2)";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = "none";
+                  e.currentTarget.style.transform = "scale(1)";
                 }}
                 title="Klikk for å kopiere"
               >
