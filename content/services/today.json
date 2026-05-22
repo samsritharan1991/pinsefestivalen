@@ -26,7 +26,8 @@
     {
       "type": "text",
       "slug": "samlingsbonn",
-      "content": "Samlingsbønn"
+      "content": "Samlingsbønn",
+      "description": "Bønn av Jurek Laub og Yohannes"
     },
     {
       "type": "text",
