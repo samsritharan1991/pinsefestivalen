@@ -69,19 +69,14 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
               <p style={{ color: "var(--muted)", marginBottom: "0.5em" }}>
                 Støtt Pinsefestivalen via Vipps: {item.vippsNumber}
               </p>
-              <button
-                onClick={() => {
-                  const vippsUrl = `vipps://pay/${item.vippsNumber}`;
-                  window.location.href = vippsUrl;
-                  setTimeout(() => {
-                    window.location.href = `https://www.vipps.no/`;
-                  }, 500);
-                }}
+              <a
+                href={`vipps://${item.vippsNumber}`}
                 style={{
+                  display: "inline-block",
                   padding: "0.75em 1.5em",
                   backgroundColor: "#d97e3a",
                   color: "white",
-                  border: "none",
+                  textDecoration: "none",
                   borderRadius: "0.25em",
                   fontWeight: "500",
                   fontSize: "1em",
@@ -89,7 +84,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                 }}
               >
                 {t.kollekt.payWithVipps}
-              </button>
+              </a>
             </div>
           )}
         </>
