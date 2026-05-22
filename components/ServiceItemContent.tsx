@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { ServiceItem, type Song } from "@/lib/content";
 import SongHeading from "@/components/SongHeading";
@@ -32,6 +33,13 @@ function linkStyle(enabled: boolean) {
 export default function ServiceItemContent({ item, prev, next, song, textContent }: Props) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const getItemTitle = (item: ServiceItem): string => {
     if (item.type === "song") return song?.title ?? item.title ?? item.slug;
@@ -67,7 +75,23 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
           {item.vippsNumber && (
             <div style={{ marginTop: "1.5em", textAlign: "center" }}>
               <p style={{ color: "var(--muted)", marginBottom: "0.5em" }}>
-                Støtt Pinsefestivalen via Vipps: {item.vippsNumber}
+                Støtt Pinsefestivalen via Vipps:{" "}
+                <button
+                  onClick={() => copyToClipboard(item.vippsNumber)}
+                  style={{
+                    background: "none",
+                    border: "1px solid var(--muted)",
+                    color: "var(--accent)",
+                    padding: "0.2em 0.5em",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                    fontWeight: "600",
+                    fontSize: "0.95em",
+                  }}
+                  title="Klikk for å kopiere"
+                >
+                  {copied ? "✓ Kopiert!" : item.vippsNumber}
+                </button>
               </p>
               <a
                 href={`vipps://${item.vippsNumber}`}
