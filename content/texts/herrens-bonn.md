@@ -1,5 +1,4 @@
 ---
-title: "Herrens bønn"
 ---
 
 Vår Far i himmelen!
