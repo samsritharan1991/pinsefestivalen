@@ -104,7 +104,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                 {copied ? "✓ Kopiert!" : item.vippsNumber}
               </button>
               <a
-                href={`vipps://${item.vippsNumber}`}
+                href={`vipps://`}
                 style={{
                   display: "block",
                   padding: "0.75em 1.5em",
