@@ -65,21 +65,28 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
             item.description && <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>
           )}
           {item.vippsNumber && (
-            <a
-              href={`https://vipps.no/28/2/02/01/${item.vippsNumber}`}
+            <button
+              onClick={() => {
+                const vippsUrl = `vipps://pay/${item.vippsNumber}`;
+                window.location.href = vippsUrl;
+                setTimeout(() => {
+                  window.location.href = `https://www.vipps.no/`;
+                }, 500);
+              }}
               style={{
-                display: "inline-block",
                 marginTop: "1.5em",
                 padding: "0.75em 1.5em",
                 backgroundColor: "#d97e3a",
                 color: "white",
-                textDecoration: "none",
+                border: "none",
                 borderRadius: "0.25em",
                 fontWeight: "500",
+                fontSize: "1em",
+                cursor: "pointer",
               }}
             >
               {t.kollekt.payWithVipps}
-            </a>
+            </button>
           )}
         </>
       );
