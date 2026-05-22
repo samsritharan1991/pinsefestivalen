@@ -97,7 +97,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
               <a
                 href={`vipps://${item.vippsNumber}`}
                 style={{
-                  display: "inline-block",
+                  display: "block",
                   padding: "0.75em 1.5em",
                   backgroundColor: "#d97e3a",
                   color: "white",
@@ -106,6 +106,7 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                   fontWeight: "500",
                   fontSize: "1em",
                   cursor: "pointer",
+                  marginTop: "1em",
                 }}
               >
                 Åpen Vipps
