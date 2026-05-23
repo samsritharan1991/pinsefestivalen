@@ -69,11 +69,12 @@ export default function TopBar() {
       <div className={styles.inner}>
         <Link href="/" className={styles.title}>
           <Image
-            src="/logo.webp"
-            alt=""
+            src="/1x/logo.png"
+            alt="Pinsefestivalen logo"
             width={48}
             height={48}
             className={styles.logo}
+            style={{ width: "48px", height: "48px" }}
           />
           <span className={styles.titleText}>{t.topbar.title}</span>
         </Link>

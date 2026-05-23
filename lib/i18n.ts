@@ -29,7 +29,7 @@ export const translations = {
       placeholder: "Informasjon om Pinsefestivalen kommer her.",
     },
     topbar: {
-      title: "Pinsefestivalen 2026",
+      title: "Pinsefestivalen",
       languageLabel: "Språk",
       themeLabel: "Tema",
       dark: "Mørk",
@@ -68,7 +68,7 @@ export const translations = {
       placeholder: "Information about Pinsefestival will appear here.",
     },
     topbar: {
-      title: "Pinsefestival 2026",
+      title: "Pentecost Festival",
       languageLabel: "Language",
       themeLabel: "Theme",
       holdAwake: "Keep awake",
@@ -109,7 +109,7 @@ export const translations = {
       placeholder: "பெந்தெகொஸ்த் திருவிழா பற்றிய தகவல் இங்கு வரும்.",
     },
     topbar: {
-      title: "பெந்தெகொஸ்த் திருவிழா 2026",
+      title: "பெந்தெகொஸ்த் திருவிழா",
       languageLabel: "மொழி",
       themeLabel: "தீம்",
       holdAwake: "திரையை விழித்திரு",
