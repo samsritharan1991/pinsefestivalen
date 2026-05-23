@@ -106,9 +106,12 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
               <a
                 href={`https://qr.vipps.no/28/2/05/031/9FrRZBdzp`}
                 style={{
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 12,
                   padding: "0.75em 1.5em",
-                  backgroundColor: "#d97e3a",
+                  backgroundColor: "#ff5b24",
                   color: "white",
                   textDecoration: "none",
                   borderRadius: "0.25em",
@@ -117,7 +120,10 @@ export default function ServiceItemContent({ item, prev, next, song, textContent
                   cursor: "pointer",
                   marginTop: "1em",
                 }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <img src="/vipps-logo.svg" alt="" width={80} height={20} />
                 Åpen Vipps
               </a>
             </div>
