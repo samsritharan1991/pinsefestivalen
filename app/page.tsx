@@ -5,29 +5,31 @@ import Link from "next/link";
 import { getTranslations } from "@/lib/i18n";
 import { useLocale } from "@/components/LocaleProvider";
 
-const linkStyle = {
-  display: "block" as const,
-  padding: "16px 20px",
-  border: "1px solid var(--border)",
-  background: "var(--card)",
+const navButtonBase = {
+  display: "flex" as const,
+  alignItems: "center" as const,
+  justifyContent: "center" as const,
+  padding: "22px 20px",
   borderRadius: 12,
-  color: "var(--fg)",
   textDecoration: "none" as const,
+  minHeight: 96,
+};
+
+const linkStyle = {
+  ...navButtonBase,
+  border: "1.5px solid #ff5b24",
+  background: "var(--card)",
+  color: "#ff5b24",
   fontSize: "1.1em",
 };
 
 const vippsLinkStyle = {
-  display: "flex" as const,
+  ...navButtonBase,
   flexDirection: "column" as const,
-  alignItems: "center" as const,
-  justifyContent: "center" as const,
   gap: 8,
-  padding: "22px 20px",
   background: "#ff5b24",
   border: "none",
-  borderRadius: 12,
   color: "#fff",
-  textDecoration: "none" as const,
   fontSize: "0.9em",
   fontWeight: 500,
 };
