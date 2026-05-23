@@ -1,9 +1,6 @@
-"use client";
+import styles from "./FestivalProgram.module.css";
 
-import { getTranslations } from "@/lib/i18n";
-import { useLocale } from "@/components/LocaleProvider";
-
-type FestivalItem = {
+export type FestivalProgramItem = {
   time: string;
   name: string;
   type: string;
@@ -11,126 +8,46 @@ type FestivalItem = {
 };
 
 type Props = {
-  items: FestivalItem[];
+  items: FestivalProgramItem[];
   title: string;
 };
 
 const typeIcons: Record<string, string> = {
-  "Musikk": "🎵",
+  Musikk: "🎵",
   "Musikk og dans": "🎶",
   "Musikk (rap)": "🎤",
-  "Tale": "🎤",
-  "Pantomime": "🎭",
-  "Samtale": "💬",
-  "Sketsj": "🎭",
-  "Sang": "🎵",
+  Tale: "🎤",
+  Pantomime: "🎭",
+  Samtale: "💬",
+  Sketsj: "🎭",
+  Sang: "🎵",
 };
 
+function getTypeIcon(type: string): string {
+  for (const [key, icon] of Object.entries(typeIcons)) {
+    if (type.startsWith(key)) return icon;
+  }
+  return "🎪";
+}
+
 export default function FestivalProgram({ items, title }: Props) {
-  const { locale } = useLocale();
-  const t = getTranslations(locale);
-
-  const getTypeIcon = (type: string): string => {
-    for (const [key, icon] of Object.entries(typeIcons)) {
-      if (type.startsWith(key)) return icon;
-    }
-    return "🎪";
-  };
-
   return (
     <>
       <h1 style={{ marginBottom: "0.5em" }}>{title}</h1>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-          gap: "1.5em",
-          marginTop: "2em",
-        }}
-      >
+      <div className={styles.grid}>
         {items.map((item, idx) => (
-          <div
-            key={idx}
-            style={{
-              backgroundColor: "var(--background-secondary)",
-              border: "1px solid var(--border)",
-              borderRadius: "12px",
-              padding: "1.5em",
-              boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-              transition: "all 0.2s ease",
-              cursor: "default",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.75em",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.15)";
-              e.currentTarget.style.transform = "translateY(-2px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
-              e.currentTarget.style.transform = "translateY(0)";
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                gap: "0.75em",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "1.6em",
-                  fontWeight: "700",
-                  color: "var(--accent)",
-                }}
-              >
-                {item.time}
-              </span>
-              <span
-                style={{
-                  fontSize: "0.85em",
-                  backgroundColor: "transparent",
-                  color: "#d97e3a",
-                  border: "1.5px solid #d97e3a",
-                  padding: "0.3em 0.65em",
-                  borderRadius: "20px",
-                  fontWeight: "600",
-                  whiteSpace: "nowrap",
-                  display: "inline-block",
-                  flexShrink: 0,
-                }}
-              >
+          <div key={idx} className={styles.card}>
+            <div className={styles.header}>
+              <span className={styles.time}>{item.time}</span>
+              <span className={styles.typeBadge}>
                 {getTypeIcon(item.type)} {item.type}
               </span>
             </div>
 
-            {item.name && (
-              <h3
-                style={{
-                  margin: "0.5em 0 0 0",
-                  fontSize: "1.1em",
-                  fontWeight: "600",
-                  color: "var(--text)",
-                }}
-              >
-                {item.name}
-              </h3>
-            )}
+            {item.name && <h3 className={styles.name}>{item.name}</h3>}
 
-            <p
-              style={{
-                margin: "0.5em 0 0 0",
-                fontSize: "0.9em",
-                color: "var(--muted)",
-                lineHeight: "1.4",
-              }}
-            >
-              {item.actor}
-            </p>
+            <p className={styles.actor}>{item.actor}</p>
           </div>
         ))}
       </div>

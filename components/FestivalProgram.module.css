@@ -1,0 +1,64 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.card {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em;
+}
+
+.time {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.typeBadge {
+  font-size: 0.85em;
+  background-color: transparent;
+  color: #d97e3a;
+  border: 1.5px solid #d97e3a;
+  padding: 0.3em 0.65em;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.name {
+  margin: 0.5em 0 0 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.actor {
+  margin: 0.5em 0 0 0;
+  font-size: 0.9em;
+  color: var(--muted);
+  line-height: 1.4;
+}
