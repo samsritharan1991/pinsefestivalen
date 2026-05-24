@@ -12,6 +12,7 @@ export const translations = {
       title: "Pinsefestivalen 2026",
       menuService: "Gudstjenesten",
       menuFestival: "Festivalen",
+      menuOrganisations: "Medvirkende",
       menuKollekt: "Støtt Pinsefestivalen",
     },
     gudstjeneste: {
@@ -52,6 +53,7 @@ export const translations = {
       title: "Pinsefestivalen 2026 (Pentecost Festival)",
       menuService: "The Service",
       menuFestival: "The Festival",
+      menuOrganisations: "Participants",
       menuKollekt: "Support Pinsefestivalen",
     },
     gudstjeneste: {
@@ -94,6 +96,7 @@ export const translations = {
       title: "பெந்தெகொஸ்த் திருவிழா 2026 (Pinsefestival)",
       menuService: "சபை வழிபாடு",
       menuFestival: "திருவிழா",
+      menuOrganisations: "பங்கேற்பாளர்கள்",
       menuKollekt: "Pinsefestival-க்கு ஆதரவு",
     },
     gudstjeneste: {
@@ -136,6 +139,7 @@ export const translations = {
       title: "مهرجان العنصرة 2026",
       menuService: "الخدمة",
       menuFestival: "المهرجان",
+      menuOrganisations: "المشاركون",
       menuKollekt: "ادعم مهرجان العنصرة",
     },
     gudstjeneste: {
@@ -178,6 +182,7 @@ export const translations = {
       title: "Xafladda Pentikost 2026",
       menuService: "Isha",
       menuFestival: "Xafladda",
+      menuOrganisations: "Ku qabsoowa",
       menuKollekt: "Taageer Xafladda Pentikost",
     },
     gudstjeneste: {
@@ -220,6 +225,7 @@ export const translations = {
       title: "پنتکوست فیسٹیول 2026",
       menuService: "عبادت",
       menuFestival: "فیسٹیول",
+      menuOrganisations: "شرکاء",
       menuKollekt: "پنتکوست فیسٹیول کی حمایت کریں",
     },
     gudstjeneste: {
@@ -262,6 +268,7 @@ export const translations = {
       title: "Festival Pięćdziesiątnicy 2026 (Pinsefestivalen)",
       menuService: "Nabożeństwo",
       menuFestival: "Festival",
+      menuOrganisations: "Uczestnicy",
       menuKollekt: "Wesprzyj Pinsefestivalen",
     },
     gudstjeneste: {

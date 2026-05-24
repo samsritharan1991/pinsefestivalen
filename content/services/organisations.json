@@ -1,0 +1,25 @@
+{
+  "title": "Medvirkende",
+  "items": [
+    {
+      "name": "Jesus is Lord Eastern & Sentral Oslo",
+      "category": "Menighet",
+      "description": "Kristent fellesskap"
+    },
+    {
+      "name": "Barnas Tro",
+      "category": "Organisasjon",
+      "description": "Kristent arbeid med barn og unge"
+    },
+    {
+      "name": "St. Johannes Ungdom",
+      "category": "Ungdomsorganisasjon",
+      "description": "Katolsk ungdomsorganisasjon"
+    },
+    {
+      "name": "Focolare",
+      "category": "Organisasjon",
+      "description": "Internasjonalt kristent bevegelse"
+    }
+  ]
+}
