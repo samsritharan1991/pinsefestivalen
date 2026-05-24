@@ -2,24 +2,134 @@
   "title": "Medvirkende kirker og organisasjoner",
   "items": [
     {
-      "name": "Jesus is Lord Eastern & Sentral Oslo",
-      "category": "Menighet",
-      "description": "Kristent fellesskap"
-    },
-    {
-      "name": "Barnas Tro",
+      "name": "Norges Kristne Råd",
       "category": "Organisasjon",
-      "description": "Kristent arbeid med barn og unge"
+      "description": "www.norkr.no"
     },
     {
-      "name": "St. Johannes Ungdom",
-      "category": "Ungdomsorganisasjon",
-      "description": "Katolsk ungdomsorganisasjon"
+      "name": "Groruddalen prostiet i Oslo bispedømme",
+      "category": "Menighet",
+      "description": "Den norske kirke"
+    },
+    {
+      "name": "Den norske kirke Grorud menighet",
+      "category": "Menighet",
+      "description": "Den norske kirke"
+    },
+    {
+      "name": "Høybråten, Fossum og Stovner menighet",
+      "category": "Menighet",
+      "description": "Den norske kirke"
+    },
+    {
+      "name": "St. Johannes Apostel og Evangelist Menighet",
+      "category": "Menighet",
+      "description": "Katolsk menighet i Oslo"
     },
     {
       "name": "Focolare",
       "category": "Organisasjon",
       "description": "Internasjonalt kristent bevegelse"
+    },
+    {
+      "name": "OKS Groruddalen",
+      "category": "Organisasjon",
+      "description": "Økumenisk kristent samarbeid"
+    },
+    {
+      "name": "JIL Central and East Oslo",
+      "category": "Organisasjon",
+      "description": "Jesus is Lord menighet"
+    },
+    {
+      "name": "Comforter",
+      "category": "Organisasjon",
+      "description": "Kristent organisasjon"
+    },
+    {
+      "name": "St. Mary Eritreisk Ortodoks Tewahedo Kirke",
+      "category": "Kirke",
+      "description": "Eritreisk ortodoks kirke"
+    },
+    {
+      "name": "Levende vann",
+      "category": "Menighet",
+      "description": "Pinsemenighet"
+    },
+    {
+      "name": "Vietnamesiske menigheten på Ellingsrud",
+      "category": "Menighet",
+      "description": "Vietnamesisk kristen menighet"
+    },
+    {
+      "name": "Yewongel Berhan Church - Oslo",
+      "category": "Kirke",
+      "description": "Etiopisk evangelikal kirke"
+    },
+    {
+      "name": "Den Etiopisk Ortodokse Tewahedo Kirke",
+      "category": "Kirke",
+      "description": "Mahidere Sebehat Kidist Lideta Le-Mariam Kirke i Oslo"
+    },
+    {
+      "name": "The Church of Pentecost International",
+      "category": "Kirke",
+      "description": "Pinsekirkelig organisasjon"
+    },
+    {
+      "name": "Gresk-ortodoks menighet i Oslo",
+      "category": "Kirke",
+      "description": "Metropolitankirke"
+    },
+    {
+      "name": "All Nations Full Gospel Church",
+      "category": "Kirke",
+      "description": "Pentekostal kirke i Oslo"
+    },
+    {
+      "name": "Saron Grorud",
+      "category": "Menighet",
+      "description": "Pinsemenigheten på Ammerud"
+    },
+    {
+      "name": "Lillokirken",
+      "category": "Menighet",
+      "description": "NLM (Norges Lutherske Misjonssamfund)"
+    },
+    {
+      "name": "Den eritreiske evangelisk-lutherske kirke",
+      "category": "Kirke",
+      "description": "Haugerud"
+    },
+    {
+      "name": "IMI kollektivet Stovner",
+      "category": "Organisasjon",
+      "description": "Kristent arbeid"
+    },
+    {
+      "name": "St Mary's M Society",
+      "category": "Organisasjon",
+      "description": "Kristen organisasjon"
+    },
+    {
+      "name": "KIA (Kristent Internasjonalt Arbeid)",
+      "category": "Organisasjon",
+      "description": "Kristent internasjonalt arbeid"
+    },
+    {
+      "name": "Groruddalen korps",
+      "category": "Kirke",
+      "description": "Frelsesarmeens kirke"
+    },
+    {
+      "name": "Høybråten Normisjon",
+      "category": "Organisasjon",
+      "description": "Misjonalt arbeid"
+    },
+    {
+      "name": "Barnas Tro",
+      "category": "Organisasjon",
+      "description": "Kristent arbeid med barn og unge"
     }
   ]
 }
