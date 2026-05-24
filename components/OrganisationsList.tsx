@@ -63,42 +63,16 @@ export default function OrganisationsList({ items, title }: Props) {
                 e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              <div
+              <h3
                 style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "0.75em",
+                  margin: 0,
+                  fontSize: "1.1em",
+                  fontWeight: "600",
+                  color: "var(--text)",
                 }}
               >
-                <h3
-                  style={{
-                    margin: 0,
-                    fontSize: "1.1em",
-                    fontWeight: "600",
-                    color: "var(--text)",
-                    flex: 1,
-                  }}
-                >
-                  {item.name}
-                </h3>
-                <span
-                  style={{
-                    fontSize: "0.85em",
-                    backgroundColor: "transparent",
-                    color: "#d97e3a",
-                    border: "1.5px solid #d97e3a",
-                    padding: "0.3em 0.65em",
-                    borderRadius: "20px",
-                    fontWeight: "600",
-                    whiteSpace: "nowrap",
-                    display: "inline-block",
-                    flexShrink: 0,
-                  }}
-                >
-                  {getCategoryIcon(item.category)} {item.category}
-                </span>
-              </div>
+                {item.name}
+              </h3>
             </div>
           );
 
