@@ -4,50 +4,56 @@ title: "Holy, holy, holy / Hellig, hellig, hellig (223)"
 
 ## Vers 1
 
-Hellig, hellig,
-
-hellig, hellig,
-
-hellig, hellig,
-
-Er Herren Sebaot.
+Hellig, hellig, hellig!
+Herre Gud allmektig,
+dag for dag vår lovsang
+skal stige opp til deg!
 
 ## Vers 2
 
-Verdig, verdig,
-
-Verdig, verdig,
-
-Verdig all pris og ære,
-
-Er Guds lam.
+Hellig, hellig, hellig!
+Nådefull og prektig,
+Fader, Sønn og Ånd,
+all ære være deg!
 
 ## Vers 3
 
-Jesus, du er Guds lam,
-
-Jesus, du er Guds lam,
-
-Jesus, du er Guds lam
-
-Som bærer verdens synd.
+Hellig, hellig, hellig!
+synger helgenskarer,
+kaster sine kroner
+for dine føtter ned.
 
 ## Vers 4
 
-Jeg vil gi mitt liv til deg,
-
-Jeg vil gi mitt liv til deg,
-
-Jeg vil gi mitt liv til deg,
-
-Gi mitt liv til deg.
+Englehærers jubel
+oppad mot deg farer,
+du som var og er og
+evig bliver ved.
 
 ## Vers 5
 
-Hellig, hellig,
+Hellig, hellig, hellig!
+Lyset er ditt rike,
+intet urent øye
+kan se din herlighet.
 
-hellig, hellig,
+## Vers 6
 
-hellig, hellig,
+Ene du er hellig,
+ingen er din like,
+full av makt og renhet
+og av kjærlighet.
 
-Er Herren Sebaot.
+## Vers 7
+
+Hellig, hellig, hellig!
+Herre Gud allmektig,
+jord og hav og himmel,
+se alt skal prise deg!
+
+## Vers 8
+
+Hellig, hellig, hellig!
+Nådefull og prektig,
+Fader, Sønn og Ånd,
+all ære være deg!
