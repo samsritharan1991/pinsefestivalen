@@ -34,6 +34,14 @@ const vippsLinkStyle = {
   fontWeight: 500,
 };
 
+const subtleButtonStyle = {
+  ...navButtonBase,
+  border: "none",
+  background: "transparent",
+  color: "var(--muted)",
+  fontSize: "1.1em",
+};
+
 export default function HomePage() {
   const { locale } = useLocale();
   const t = getTranslations(locale);
@@ -58,7 +66,7 @@ export default function HomePage() {
           <Image src="/vipps-logo.svg" alt="Vipps" width={104} height={26} />
           {t.home.menuKollekt}
         </Link>
-        <Link href="/organisasjoner" style={linkStyle}>
+        <Link href="/organisasjoner" style={subtleButtonStyle}>
           {t.home.menuOrganisations}
         </Link>
       </nav>
