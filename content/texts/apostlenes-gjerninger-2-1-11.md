@@ -32,7 +32,7 @@
 
 **8** Hvordan kan da hver enkelt av oss høre sitt eget morsmål?
 
-## Kantonesisk
+## Mandarin
 
 **9** Vi er partere og medere og elamitter, folk som bor i Mesopotamia, Judea og Kappadokia, i Pontos og Asia,
 
