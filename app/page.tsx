@@ -36,7 +36,7 @@ const vippsLinkStyle = {
 
 const subtleButtonStyle = {
   ...navButtonBase,
-  border: "none",
+  border: "1px solid rgba(0, 0, 0, 0.1)",
   background: "transparent",
   color: "var(--muted)",
   fontSize: "1.1em",
