@@ -1,5 +1,6 @@
 ---
 title: "Vinden kjenner ingen grenser (700)"
+singers: "synges på 'navnet Jesus' melodi."
 ---
 
 ## Vers 1
