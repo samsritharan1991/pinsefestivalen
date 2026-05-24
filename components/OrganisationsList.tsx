@@ -68,7 +68,7 @@ export default function OrganisationsList({ items, title }: Props) {
                   margin: 0,
                   fontSize: "1.1em",
                   fontWeight: "600",
-                  color: "var(--text)",
+                  color: "#d97e3a",
                 }}
               >
                 {item.name}
