@@ -49,9 +49,6 @@ export default function HomePage() {
         <Link href="/festivalen" style={linkStyle}>
           {t.home.menuFestival}
         </Link>
-        <Link href="/organisasjoner" style={linkStyle}>
-          {t.home.menuOrganisations}
-        </Link>
         <Link
           href="https://qr.vipps.no/28/2/05/031/9FrRZBdzp"
           style={vippsLinkStyle}
@@ -60,6 +57,9 @@ export default function HomePage() {
         >
           <Image src="/vipps-logo.svg" alt="Vipps" width={104} height={26} />
           {t.home.menuKollekt}
+        </Link>
+        <Link href="/organisasjoner" style={linkStyle}>
+          {t.home.menuOrganisations}
         </Link>
       </nav>
     </>
