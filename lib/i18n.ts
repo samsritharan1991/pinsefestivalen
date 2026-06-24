@@ -38,6 +38,10 @@ export const translations = {
       light: "Lys",
       wakeNotSupported: "Skjerm-våken støttes ikke i denne nettleseren.",
     },
+    overlay: {
+      title: "Pinsefestivalen er over for i år",
+      message: "Vi er tilbake Pinsen 2027.",
+    },
     lang: {
       no: "Norsk",
       en: "English",
@@ -80,6 +84,10 @@ export const translations = {
       dark: "Dark",
       light: "Light",
       wakeNotSupported: "Screen wake lock is not supported in this browser.",
+    },
+    overlay: {
+      title: "Pinsefestivalen is over for this year",
+      message: "We'll be back Pentecost 2027.",
     },
     lang: {
       no: "Norsk",
@@ -124,6 +132,10 @@ export const translations = {
       light: "வெளிச்சம்",
       wakeNotSupported: "இந்த உலாவியில் திரை விழிப்பு ஆதரிக்கப்படவில்லை.",
     },
+    overlay: {
+      title: "இந்த ஆண்டிற்கான பெந்தெகொஸ்த் திருவிழா முடிந்துவிட்டது",
+      message: "2027 பெந்தெகொஸ்தில் மீண்டும் சந்திப்போம்.",
+    },
     lang: {
       no: "நார்வீஜியன்",
       en: "ஆங்கிலம்",
@@ -166,6 +178,10 @@ export const translations = {
       dark: "داكن",
       light: "فاتح",
       wakeNotSupported: "قفل إبقاء الشاشة غير مدعوم في هذا المتصفح.",
+    },
+    overlay: {
+      title: "انتهى مهرجان العنصرة لهذا العام",
+      message: "نعود في عيد العنصرة 2027.",
     },
     lang: {
       no: "النرويجية",
@@ -210,6 +226,10 @@ export const translations = {
       light: "Iftiinka",
       wakeNotSupported: "Screen wake lock ma taageero browserkan.",
     },
+    overlay: {
+      title: "Xafladda Pentikost way dhammaatay sanadkan",
+      message: "Waxaan ku soo noqonaynaa Pentikost 2027.",
+    },
     lang: {
       no: "Noorweji",
       en: "Ingiriisi",
@@ -253,6 +273,10 @@ export const translations = {
       light: "روشن",
       wakeNotSupported: "اس براؤزر میں اسکرین ویک لاک سپورٹ نہیں ہے۔",
     },
+    overlay: {
+      title: "اس سال کا پنتکوست فیسٹیول ختم ہو گیا",
+      message: "ہم 2027 کے پنتکوست میں واپس آئیں گے۔",
+    },
     lang: {
       no: "نارویجن",
       en: "انگریزی",
@@ -295,6 +319,10 @@ export const translations = {
       dark: "Ciemny",
       light: "Jasny",
       wakeNotSupported: "Blokada czuwania ekranu nie jest obsługiwana w tej przeglądarce.",
+    },
+    overlay: {
+      title: "Festival Pięćdziesiątnicy zakończył się w tym roku",
+      message: "Wracamy w Pięćdziesiątnicę 2027.",
     },
     lang: {
       no: "Norweski",

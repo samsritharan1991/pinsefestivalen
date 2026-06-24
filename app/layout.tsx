@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import { Suspense } from "react";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import TopBar from "@/components/TopBar";
+import FestivalOverOverlay from "@/components/FestivalOverOverlay";
 import { locales, defaultLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <TopBar />
           </Suspense>
           <main>{children}</main>
+          <FestivalOverOverlay />
         </LocaleProvider>
       </body>
     </html>
